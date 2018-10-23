@@ -1,6 +1,6 @@
 const countries = [
   {
-    country: "Afghanistan",
+    name: "Afghanistan",
     population: 31056997,
     square_area: 647500,
     pop_density: "48.0",
@@ -12,7 +12,7 @@ const countries = [
     deathrate: "20.34"
   },
   {
-    country: "Albania",
+    name: "Albania",
     population: 3581655,
     area: 28748,
     pop_density: "124.6",
@@ -24,7 +24,7 @@ const countries = [
     deathrate: "5.22"
   },
   {
-    country: "Algeria",
+    name: "Algeria",
     population: 32930091,
     area: 2381740,
     pop_density: "13.8",
@@ -36,19 +36,7 @@ const countries = [
     deathrate: "4.61"
   },
   {
-    country: "American Samoa",
-    population: 57794,
-    area: 199,
-    pop_density: "290.4",
-    infant_mortality: "9.27",
-    GDP: 8000,
-    percent_literate: "97.0",
-    climate: "2",
-    birthrate: "22.46",
-    deathrate: "3.27"
-  },
-  {
-    country: "Andorra",
+    name: "Andorra",
     population: 71201,
     area: 468,
     pop_density: "152.1",
@@ -60,7 +48,7 @@ const countries = [
     deathrate: "6.25"
   },
   {
-    country: "Angola",
+    name: "Angola",
     population: 12127071,
     area: 1246700,
     pop_density: "9.7",
@@ -72,19 +60,7 @@ const countries = [
     deathrate: "24.2"
   },
   {
-    country: "Anguilla ",
-    population: 13477,
-    area: 102,
-    pop_density: "132.1",
-    infant_mortality: "21.03",
-    GDP: 8600,
-    percent_literate: "95.0",
-    climate: "2",
-    birthrate: "14.17",
-    deathrate: "5.34"
-  },
-  {
-    country: "Antigua & Barbuda ",
+    name: "Antigua and Barbuda",
     population: 69108,
     area: 443,
     pop_density: "156.0",
@@ -96,7 +72,7 @@ const countries = [
     deathrate: "5.37"
   },
   {
-    country: "Argentina ",
+    name: "Argentina",
     population: 39921833,
     area: 2766890,
     pop_density: "14.4",
@@ -108,7 +84,7 @@ const countries = [
     deathrate: "7.55"
   },
   {
-    country: "Armenia ",
+    name: "Armenia",
     population: 2976372,
     area: 29800,
     pop_density: "99.9",
@@ -120,19 +96,7 @@ const countries = [
     deathrate: "8.23"
   },
   {
-    country: "Aruba ",
-    population: 71891,
-    area: 193,
-    pop_density: "372.5",
-    infant_mortality: "5.89",
-    GDP: 28000,
-    percent_literate: "97.0",
-    climate: "2",
-    birthrate: "11.03",
-    deathrate: "6.68"
-  },
-  {
-    country: "Australia ",
+    name: "Australia",
     population: 20264082,
     area: 7686850,
     pop_density: "2.6",
@@ -144,7 +108,7 @@ const countries = [
     deathrate: "7.51"
   },
   {
-    country: "Austria ",
+    name: "Austria",
     population: 8192880,
     area: 83870,
     pop_density: "97.7",
@@ -156,7 +120,7 @@ const countries = [
     deathrate: "9.76"
   },
   {
-    country: "Azerbaijan ",
+    name: "Azerbaijan",
     population: 7961619,
     area: 86600,
     pop_density: "91.9",
@@ -168,7 +132,7 @@ const countries = [
     deathrate: "9.75"
   },
   {
-    country: "Bahamas, The ",
+    name: "Bahamas",
     population: 303770,
     area: 13940,
     pop_density: "21.8",
@@ -180,7 +144,7 @@ const countries = [
     deathrate: "9.05"
   },
   {
-    country: "Bahrain ",
+    name: "Bahrain",
     population: 698585,
     area: 665,
     pop_density: "1050.5",
@@ -192,7 +156,7 @@ const countries = [
     deathrate: "4.14"
   },
   {
-    country: "Bangladesh ",
+    name: "Bangladesh",
     population: 147365352,
     area: 144000,
     pop_density: "1023.4",
@@ -204,7 +168,7 @@ const countries = [
     deathrate: "8.27"
   },
   {
-    country: "Barbados ",
+    name: "Barbados",
     population: 279912,
     area: 431,
     pop_density: "649.5",
@@ -216,7 +180,7 @@ const countries = [
     deathrate: "8.67"
   },
   {
-    country: "Belarus ",
+    name: "Belarus",
     population: 10293011,
     area: 207600,
     pop_density: "49.6",
@@ -228,7 +192,7 @@ const countries = [
     deathrate: "14.02"
   },
   {
-    country: "Belgium ",
+    name: "Belgium",
     population: 10379067,
     area: 30528,
     pop_density: "340.0",
@@ -240,7 +204,7 @@ const countries = [
     deathrate: "10.27"
   },
   {
-    country: "Belize ",
+    name: "Belize",
     population: 287730,
     area: 22966,
     pop_density: "12.5",
@@ -252,7 +216,7 @@ const countries = [
     deathrate: "5.72"
   },
   {
-    country: "Benin ",
+    name: "Benin",
     population: 7862944,
     area: 112620,
     pop_density: "69.8",
@@ -264,19 +228,7 @@ const countries = [
     deathrate: "12.22"
   },
   {
-    country: "Bermuda ",
-    population: 65773,
-    area: 53,
-    pop_density: "1241.0",
-    infant_mortality: "8.53",
-    GDP: 36000,
-    percent_literate: "98.0",
-    climate: "2",
-    birthrate: "11.4",
-    deathrate: "7.74"
-  },
-  {
-    country: "Bhutan ",
+    name: "Bhutan",
     population: 2279723,
     area: 47000,
     pop_density: "48.5",
@@ -288,7 +240,7 @@ const countries = [
     deathrate: "12.7"
   },
   {
-    country: "Bolivia ",
+    name: "Bolivia",
     population: 8989046,
     area: 1098580,
     pop_density: "8.2",
@@ -300,7 +252,7 @@ const countries = [
     deathrate: "7.53"
   },
   {
-    country: "Bosnia & Herzegovina ",
+    name: "Bosnia and Herzegovina",
     population: 4498976,
     area: 51129,
     pop_density: "88.0",
@@ -312,7 +264,7 @@ const countries = [
     deathrate: "8.27"
   },
   {
-    country: "Botswana ",
+    name: "Botswana",
     population: 1639833,
     area: 600370,
     pop_density: "2.7",
@@ -324,7 +276,7 @@ const countries = [
     deathrate: "29.5"
   },
   {
-    country: "Brazil ",
+    name: "Brazil",
     population: 188078227,
     area: 8511965,
     pop_density: "22.1",
@@ -336,19 +288,7 @@ const countries = [
     deathrate: "6.17"
   },
   {
-    country: "British Virgin Is. ",
-    population: 23098,
-    area: 153,
-    pop_density: "151.0",
-    infant_mortality: "18.05",
-    GDP: 16000,
-    percent_literate: "97.8",
-    climate: "2",
-    birthrate: "14.89",
-    deathrate: "4.42"
-  },
-  {
-    country: "Brunei ",
+    name: "Brunei",
     population: 379444,
     area: 5770,
     pop_density: "65.8",
@@ -360,7 +300,7 @@ const countries = [
     deathrate: "3.45"
   },
   {
-    country: "Bulgaria ",
+    name: "Bulgaria",
     population: 7385367,
     area: 110910,
     pop_density: "66.6",
@@ -372,7 +312,7 @@ const countries = [
     deathrate: "14.27"
   },
   {
-    country: "Burkina Faso ",
+    name: "Burkina Faso",
     population: 13902972,
     area: 274200,
     pop_density: "50.7",
@@ -384,7 +324,7 @@ const countries = [
     deathrate: "15.6"
   },
   {
-    country: "Burma ",
+    name: "Burma",
     population: 47382633,
     area: 678500,
     pop_density: "69.8",
@@ -396,7 +336,7 @@ const countries = [
     deathrate: "9.83"
   },
   {
-    country: "Burundi ",
+    name: "Burundi",
     population: 8090068,
     area: 27830,
     pop_density: "290.7",
@@ -408,7 +348,7 @@ const countries = [
     deathrate: "13.46"
   },
   {
-    country: "Cambodia ",
+    name: "Cambodia",
     population: 13881427,
     area: 181040,
     pop_density: "76.7",
@@ -420,7 +360,7 @@ const countries = [
     deathrate: "9.06"
   },
   {
-    country: "Cameroon ",
+    name: "Cameroon",
     population: 17340702,
     area: 475440,
     pop_density: "36.5",
@@ -432,7 +372,7 @@ const countries = [
     deathrate: "13.47"
   },
   {
-    country: "Canada ",
+    name: "Canada",
     population: 33098932,
     area: 9984670,
     pop_density: "3.3",
@@ -444,7 +384,7 @@ const countries = [
     deathrate: "7.8"
   },
   {
-    country: "Cape Verde ",
+    name: "Cape Verde",
     population: 420979,
     area: 4033,
     pop_density: "104.4",
@@ -456,19 +396,7 @@ const countries = [
     deathrate: "6.55"
   },
   {
-    country: "Cayman Islands ",
-    population: 45436,
-    area: 262,
-    pop_density: "173.4",
-    infant_mortality: "8.19",
-    GDP: 35000,
-    percent_literate: "98.0",
-    climate: "2",
-    birthrate: "12.74",
-    deathrate: "4.89"
-  },
-  {
-    country: "Central African Rep. ",
+    name: "Central African Republic",
     population: 4303356,
     area: 622984,
     pop_density: "6.9",
@@ -480,7 +408,7 @@ const countries = [
     deathrate: "18.65"
   },
   {
-    country: "Chad ",
+    name: "Chad",
     population: 9944201,
     area: 1284000,
     pop_density: "7.7",
@@ -492,7 +420,7 @@ const countries = [
     deathrate: "16.38"
   },
   {
-    country: "Chile ",
+    name: "Chile",
     population: 16134219,
     area: 756950,
     pop_density: "21.3",
@@ -504,7 +432,7 @@ const countries = [
     deathrate: "5.81"
   },
   {
-    country: "China ",
+    name: "China",
     population: 1313973713,
     area: 9596960,
     pop_density: "136.9",
@@ -516,7 +444,7 @@ const countries = [
     deathrate: "6.97"
   },
   {
-    country: "Colombia ",
+    name: "Colombia",
     population: 43593035,
     area: 1138910,
     pop_density: "38.3",
@@ -528,7 +456,7 @@ const countries = [
     deathrate: "5.58"
   },
   {
-    country: "Comoros ",
+    name: "Comoros",
     population: 690948,
     area: 2170,
     pop_density: "318.4",
@@ -540,7 +468,7 @@ const countries = [
     deathrate: "8.2"
   },
   {
-    country: "Congo, Dem. Rep. ",
+    name: "Democratic Republic of the Congo",
     population: 62660551,
     area: 2345410,
     pop_density: "26.7",
@@ -552,7 +480,7 @@ const countries = [
     deathrate: "13.27"
   },
   {
-    country: "Congo, Repub. of the ",
+    name: "Republic of the Congo",
     population: 3702314,
     area: 342000,
     pop_density: "10.8",
@@ -564,19 +492,7 @@ const countries = [
     deathrate: "12.93"
   },
   {
-    country: "Cook Islands ",
-    population: 21388,
-    area: 240,
-    pop_density: "89.1",
-    infant_mortality: "",
-    GDP: 5000,
-    percent_literate: "95.0",
-    climate: "2",
-    birthrate: "21",
-    deathrate: ""
-  },
-  {
-    country: "Costa Rica ",
+    name: "Costa Rica",
     population: 4075261,
     area: 51100,
     pop_density: "79.8",
@@ -588,7 +504,7 @@ const countries = [
     deathrate: "4.36"
   },
   {
-    country: "Cote d'Ivoire ",
+    name: "Cote d'Ivoire",
     population: 17654843,
     area: 322460,
     pop_density: "54.8",
@@ -600,7 +516,7 @@ const countries = [
     deathrate: "14.84"
   },
   {
-    country: "Croatia ",
+    name: "Croatia",
     population: 4494749,
     area: 56542,
     pop_density: "79.5",
@@ -612,7 +528,7 @@ const countries = [
     deathrate: "11.48"
   },
   {
-    country: "Cuba ",
+    name: "Cuba",
     population: 11382820,
     area: 110860,
     pop_density: "102.7",
@@ -624,7 +540,7 @@ const countries = [
     deathrate: "7.22"
   },
   {
-    country: "Cyprus ",
+    name: "Cyprus",
     population: 784301,
     area: 9250,
     pop_density: "84.8",
@@ -636,7 +552,7 @@ const countries = [
     deathrate: "7.68"
   },
   {
-    country: "Czech Republic ",
+    name: "Czech Republic",
     population: 10235455,
     area: 78866,
     pop_density: "129.8",
@@ -648,7 +564,7 @@ const countries = [
     deathrate: "10.59"
   },
   {
-    country: "Denmark ",
+    name: "Denmark",
     population: 5450661,
     area: 43094,
     pop_density: "126.5",
@@ -660,7 +576,7 @@ const countries = [
     deathrate: "10.36"
   },
   {
-    country: "Djibouti ",
+    name: "Djibouti",
     population: 486530,
     area: 23000,
     pop_density: "21.2",
@@ -672,7 +588,7 @@ const countries = [
     deathrate: "19.31"
   },
   {
-    country: "Dominica ",
+    name: "Dominica",
     population: 68910,
     area: 754,
     pop_density: "91.4",
@@ -684,7 +600,7 @@ const countries = [
     deathrate: "6.73"
   },
   {
-    country: "Dominican Republic ",
+    name: "Dominican Republic",
     population: 9183984,
     area: 48730,
     pop_density: "188.5",
@@ -696,7 +612,7 @@ const countries = [
     deathrate: "5.73"
   },
   {
-    country: "East Timor ",
+    name: "East Timor",
     population: 1062777,
     area: 15007,
     pop_density: "70.8",
@@ -708,7 +624,7 @@ const countries = [
     deathrate: "6.24"
   },
   {
-    country: "Ecuador ",
+    name: "Ecuador",
     population: 13547510,
     area: 283560,
     pop_density: "47.8",
@@ -720,7 +636,7 @@ const countries = [
     deathrate: "4.23"
   },
   {
-    country: "Egypt ",
+    name: "Egypt",
     population: 78887007,
     area: 1001450,
     pop_density: "78.8",
@@ -732,7 +648,7 @@ const countries = [
     deathrate: "5.23"
   },
   {
-    country: "El Salvador ",
+    name: "El Salvador",
     population: 6822378,
     area: 21040,
     pop_density: "324.3",
@@ -744,7 +660,7 @@ const countries = [
     deathrate: "5.78"
   },
   {
-    country: "Equatorial Guinea ",
+    name: "Equatorial Guinea",
     population: 540109,
     area: 28051,
     pop_density: "19.3",
@@ -756,7 +672,7 @@ const countries = [
     deathrate: "15.06"
   },
   {
-    country: "Eritrea ",
+    name: "Eritrea",
     population: 4786994,
     area: 121320,
     pop_density: "39.5",
@@ -768,7 +684,7 @@ const countries = [
     deathrate: "9.6"
   },
   {
-    country: "Estonia ",
+    name: "Estonia",
     population: 1324333,
     area: 45226,
     pop_density: "29.3",
@@ -780,7 +696,7 @@ const countries = [
     deathrate: "13.25"
   },
   {
-    country: "Ethiopia ",
+    name: "Ethiopia",
     population: 74777981,
     area: 1127127,
     pop_density: "66.3",
@@ -792,19 +708,7 @@ const countries = [
     deathrate: "14.86"
   },
   {
-    country: "Faroe Islands ",
-    population: 47246,
-    area: 1399,
-    pop_density: "33.8",
-    infant_mortality: "6.24",
-    GDP: 22000,
-    percent_literate: "",
-    climate: "",
-    birthrate: "14.05",
-    deathrate: "8.7"
-  },
-  {
-    country: "Fiji ",
+    name: "Fiji",
     population: 905949,
     area: 18270,
     pop_density: "49.6",
@@ -816,7 +720,7 @@ const countries = [
     deathrate: "5.65"
   },
   {
-    country: "Finland ",
+    name: "Finland",
     population: 5231372,
     area: 338145,
     pop_density: "15.5",
@@ -828,7 +732,7 @@ const countries = [
     deathrate: "9.86"
   },
   {
-    country: "France ",
+    name: "France",
     population: 60876136,
     area: 547030,
     pop_density: "111.3",
@@ -840,31 +744,7 @@ const countries = [
     deathrate: "9.14"
   },
   {
-    country: "French Guiana ",
-    population: 199509,
-    area: 91000,
-    pop_density: "2.2",
-    infant_mortality: "12.07",
-    GDP: 8300,
-    percent_literate: "83.0",
-    climate: "2",
-    birthrate: "20.46",
-    deathrate: "4.88"
-  },
-  {
-    country: "French Polynesia ",
-    population: 274578,
-    area: 4167,
-    pop_density: "65.9",
-    infant_mortality: "8.44",
-    GDP: 17500,
-    percent_literate: "98.0",
-    climate: "2",
-    birthrate: "16.68",
-    deathrate: "4.69"
-  },
-  {
-    country: "Gabon ",
+    name: "Gabon",
     population: 1424906,
     area: 267667,
     pop_density: "5.3",
@@ -876,7 +756,7 @@ const countries = [
     deathrate: "12.25"
   },
   {
-    country: "Gambia, The ",
+    name: "Gambia",
     population: 1641564,
     area: 11300,
     pop_density: "145.3",
@@ -888,19 +768,7 @@ const countries = [
     deathrate: "12.25"
   },
   {
-    country: "Gaza Strip ",
-    population: 1428757,
-    area: 360,
-    pop_density: "3968.8",
-    infant_mortality: "22.93",
-    GDP: 600,
-    percent_literate: "",
-    climate: "3",
-    birthrate: "39.45",
-    deathrate: "3.8"
-  },
-  {
-    country: "Georgia ",
+    name: "Georgia",
     population: 4661473,
     area: 69700,
     pop_density: "66.9",
@@ -912,7 +780,7 @@ const countries = [
     deathrate: "9.23"
   },
   {
-    country: "Germany ",
+    name: "Germany",
     population: 82422299,
     area: 357021,
     pop_density: "230.9",
@@ -924,7 +792,7 @@ const countries = [
     deathrate: "10.62"
   },
   {
-    country: "Ghana ",
+    name: "Ghana",
     population: 22409572,
     area: 239460,
     pop_density: "93.6",
@@ -936,7 +804,7 @@ const countries = [
     deathrate: "9.72"
   },
   {
-    country: "Gibraltar ",
+    name: "Gibraltar",
     population: 27928,
     area: 7,
     pop_density: "3989.7",
@@ -948,7 +816,7 @@ const countries = [
     deathrate: "9.31"
   },
   {
-    country: "Greece ",
+    name: "Greece",
     population: 10688058,
     area: 131940,
     pop_density: "81.0",
@@ -960,7 +828,7 @@ const countries = [
     deathrate: "10.24"
   },
   {
-    country: "Greenland ",
+    name: "Greenland",
     population: 56361,
     area: 2166086,
     pop_density: "0.0",
@@ -972,7 +840,7 @@ const countries = [
     deathrate: "7.84"
   },
   {
-    country: "Grenada ",
+    name: "Grenada",
     population: 89703,
     area: 344,
     pop_density: "260.8",
@@ -984,19 +852,7 @@ const countries = [
     deathrate: "6.88"
   },
   {
-    country: "Guadeloupe ",
-    population: 452776,
-    area: 1780,
-    pop_density: "254.4",
-    infant_mortality: "8.6",
-    GDP: 8000,
-    percent_literate: "90.0",
-    climate: "2",
-    birthrate: "15.05",
-    deathrate: "6.09"
-  },
-  {
-    country: "Guam ",
+    name: "Guam",
     population: 171019,
     area: 541,
     pop_density: "316.1",
@@ -1008,7 +864,7 @@ const countries = [
     deathrate: "4.48"
   },
   {
-    country: "Guatemala ",
+    name: "Guatemala",
     population: 12293545,
     area: 108890,
     pop_density: "112.9",
@@ -1020,19 +876,7 @@ const countries = [
     deathrate: "5.2"
   },
   {
-    country: "Guernsey ",
-    population: 65409,
-    area: 78,
-    pop_density: "838.6",
-    infant_mortality: "4.71",
-    GDP: 20000,
-    percent_literate: "",
-    climate: "3",
-    birthrate: "8.81",
-    deathrate: "10.01"
-  },
-  {
-    country: "Guinea ",
+    name: "Guinea",
     population: 9690222,
     area: 245857,
     pop_density: "39.4",
@@ -1044,7 +888,7 @@ const countries = [
     deathrate: "15.48"
   },
   {
-    country: "Guinea-Bissau ",
+    name: "Guinea-Bissau",
     population: 1442029,
     area: 36120,
     pop_density: "39.9",
@@ -1056,7 +900,7 @@ const countries = [
     deathrate: "16.53"
   },
   {
-    country: "Guyana ",
+    name: "Guyana",
     population: 767245,
     area: 214970,
     pop_density: "3.6",
@@ -1068,7 +912,7 @@ const countries = [
     deathrate: "8.28"
   },
   {
-    country: "Haiti ",
+    name: "Haiti",
     population: 8308504,
     area: 27750,
     pop_density: "299.4",
@@ -1080,7 +924,7 @@ const countries = [
     deathrate: "12.17"
   },
   {
-    country: "Honduras ",
+    name: "Honduras",
     population: 7326496,
     area: 112090,
     pop_density: "65.4",
@@ -1092,19 +936,7 @@ const countries = [
     deathrate: "5.28"
   },
   {
-    country: "Hong Kong ",
-    population: 6940432,
-    area: 1092,
-    pop_density: "6355.7",
-    infant_mortality: "2.97",
-    GDP: 28800,
-    percent_literate: "93.5",
-    climate: "2",
-    birthrate: "7.29",
-    deathrate: "6.29"
-  },
-  {
-    country: "Hungary ",
+    name: "Hungary",
     population: 9981334,
     area: 93030,
     pop_density: "107.3",
@@ -1116,7 +948,7 @@ const countries = [
     deathrate: "13.11"
   },
   {
-    country: "Iceland ",
+    name: "Iceland",
     population: 299388,
     area: 103000,
     pop_density: "2.9",
@@ -1128,7 +960,7 @@ const countries = [
     deathrate: "6.72"
   },
   {
-    country: "India ",
+    name: "India",
     population: 1095351995,
     area: 3287590,
     pop_density: "333.2",
@@ -1140,7 +972,7 @@ const countries = [
     deathrate: "8.18"
   },
   {
-    country: "Indonesia ",
+    name: "Indonesia",
     population: 245452739,
     area: 1919440,
     pop_density: "127.9",
@@ -1152,7 +984,7 @@ const countries = [
     deathrate: "6.25"
   },
   {
-    country: "Iran ",
+    name: "Iran",
     population: 68688433,
     area: 1648000,
     pop_density: "41.7",
@@ -1164,7 +996,7 @@ const countries = [
     deathrate: "5.55"
   },
   {
-    country: "Iraq ",
+    name: "Iraq",
     population: 26783383,
     area: 437072,
     pop_density: "61.3",
@@ -1176,7 +1008,7 @@ const countries = [
     deathrate: "5.37"
   },
   {
-    country: "Ireland ",
+    name: "Ireland",
     population: 4062235,
     area: 70280,
     pop_density: "57.8",
@@ -1188,19 +1020,7 @@ const countries = [
     deathrate: "7.82"
   },
   {
-    country: "Isle of Man ",
-    population: 75441,
-    area: 572,
-    pop_density: "131.9",
-    infant_mortality: "5.93",
-    GDP: 21000,
-    percent_literate: "",
-    climate: "3",
-    birthrate: "11.05",
-    deathrate: "11.19"
-  },
-  {
-    country: "Israel ",
+    name: "Israel",
     population: 6352117,
     area: 20770,
     pop_density: "305.8",
@@ -1212,7 +1032,7 @@ const countries = [
     deathrate: "6.18"
   },
   {
-    country: "Italy ",
+    name: "Italy",
     population: 58133509,
     area: 301230,
     pop_density: "193.0",
@@ -1224,7 +1044,7 @@ const countries = [
     deathrate: "10.4"
   },
   {
-    country: "Jamaica ",
+    name: "Jamaica",
     population: 2758124,
     area: 10991,
     pop_density: "250.9",
@@ -1236,7 +1056,7 @@ const countries = [
     deathrate: "6.52"
   },
   {
-    country: "Japan ",
+    name: "Japan",
     population: 127463611,
     area: 377835,
     pop_density: "337.4",
@@ -1248,19 +1068,7 @@ const countries = [
     deathrate: "9.16"
   },
   {
-    country: "Jersey ",
-    population: 91084,
-    area: 116,
-    pop_density: "785.2",
-    infant_mortality: "5.24",
-    GDP: 24800,
-    percent_literate: "",
-    climate: "3",
-    birthrate: "9.3",
-    deathrate: "9.28"
-  },
-  {
-    country: "Jordan ",
+    name: "Jordan",
     population: 5906760,
     area: 92300,
     pop_density: "64.0",
@@ -1272,7 +1080,7 @@ const countries = [
     deathrate: "2.65"
   },
   {
-    country: "Kazakhstan ",
+    name: "Kazakhstan",
     population: 15233244,
     area: 2717300,
     pop_density: "5.6",
@@ -1284,7 +1092,7 @@ const countries = [
     deathrate: "9.42"
   },
   {
-    country: "Kenya ",
+    name: "Kenya",
     population: 34707817,
     area: 582650,
     pop_density: "59.6",
@@ -1296,7 +1104,7 @@ const countries = [
     deathrate: "14.02"
   },
   {
-    country: "Kiribati ",
+    name: "Kiribati",
     population: 105432,
     area: 811,
     pop_density: "130.0",
@@ -1308,7 +1116,7 @@ const countries = [
     deathrate: "8.26"
   },
   {
-    country: "North Korea",
+    name: "North Korea",
     population: 23113019,
     area: 120540,
     pop_density: "191.8",
@@ -1320,7 +1128,7 @@ const countries = [
     deathrate: "7.13"
   },
   {
-    country: "South Korea",
+    name: "South Korea",
     population: 48846823,
     area: 98480,
     pop_density: "496.0",
@@ -1332,7 +1140,7 @@ const countries = [
     deathrate: "5.85"
   },
   {
-    country: "Kuwait ",
+    name: "Kuwait",
     population: 2418393,
     area: 17820,
     pop_density: "135.7",
@@ -1344,7 +1152,7 @@ const countries = [
     deathrate: "2.41"
   },
   {
-    country: "Kyrgyzstan ",
+    name: "Kyrgyzstan",
     population: 5213898,
     area: 198500,
     pop_density: "26.3",
@@ -1356,7 +1164,7 @@ const countries = [
     deathrate: "7.08"
   },
   {
-    country: "Laos ",
+    name: "Laos",
     population: 6368481,
     area: 236800,
     pop_density: "26.9",
@@ -1368,7 +1176,7 @@ const countries = [
     deathrate: "11.55"
   },
   {
-    country: "Latvia ",
+    name: "Latvia",
     population: 2274735,
     area: 64589,
     pop_density: "35.2",
@@ -1380,7 +1188,7 @@ const countries = [
     deathrate: "13.66"
   },
   {
-    country: "Lebanon ",
+    name: "Lebanon",
     population: 3874050,
     area: 10400,
     pop_density: "372.5",
@@ -1392,7 +1200,7 @@ const countries = [
     deathrate: "6.21"
   },
   {
-    country: "Lesotho ",
+    name: "Lesotho",
     population: 2022331,
     area: 30355,
     pop_density: "66.6",
@@ -1404,7 +1212,7 @@ const countries = [
     deathrate: "28.71"
   },
   {
-    country: "Liberia ",
+    name: "Liberia",
     population: 3042004,
     area: 111370,
     pop_density: "27.3",
@@ -1416,7 +1224,7 @@ const countries = [
     deathrate: "23.1"
   },
   {
-    country: "Libya ",
+    name: "Libya",
     population: 5900754,
     area: 1759540,
     pop_density: "3.4",
@@ -1428,7 +1236,7 @@ const countries = [
     deathrate: "3.48"
   },
   {
-    country: "Liechtenstein ",
+    name: "Liechtenstein",
     population: 33987,
     area: 160,
     pop_density: "212.4",
@@ -1440,7 +1248,7 @@ const countries = [
     deathrate: "7.18"
   },
   {
-    country: "Lithuania ",
+    name: "Lithuania",
     population: 3585906,
     area: 65200,
     pop_density: "55.0",
@@ -1452,7 +1260,7 @@ const countries = [
     deathrate: "10.98"
   },
   {
-    country: "Luxembourg ",
+    name: "Luxembourg",
     population: 474413,
     area: 2586,
     pop_density: "183.5",
@@ -1464,19 +1272,7 @@ const countries = [
     deathrate: "8.41"
   },
   {
-    country: "Macau",
-    population: 453125,
-    area: 28,
-    pop_density: "16183.0",
-    infant_mortality: "4.39",
-    GDP: 19400,
-    percent_literate: "94.5",
-    climate: "2",
-    birthrate: "8.48",
-    deathrate: "4.47"
-  },
-  {
-    country: "Macedonia",
+    name: "Macedonia",
     population: 2050554,
     area: 25333,
     pop_density: "80.9",
@@ -1488,7 +1284,7 @@ const countries = [
     deathrate: "8.77"
   },
   {
-    country: "Madagascar",
+    name: "Madagascar",
     population: 18595469,
     area: 587040,
     pop_density: "31.7",
@@ -1500,7 +1296,7 @@ const countries = [
     deathrate: "11.11"
   },
   {
-    country: "Malawi",
+    name: "Malawi",
     population: 13013926,
     area: 118480,
     pop_density: "109.8",
@@ -1512,7 +1308,7 @@ const countries = [
     deathrate: "19.33"
   },
   {
-    country: "Malaysia",
+    name: "Malaysia",
     population: 24385858,
     area: 329750,
     pop_density: "74.0",
@@ -1524,7 +1320,7 @@ const countries = [
     deathrate: "5.05"
   },
   {
-    country: "Maldives",
+    name: "Maldives",
     population: 359008,
     area: 300,
     pop_density: "1196.7",
@@ -1536,7 +1332,7 @@ const countries = [
     deathrate: "7.06"
   },
   {
-    country: "Mali",
+    name: "Mali",
     population: 11716829,
     area: 1240000,
     pop_density: "9.5",
@@ -1548,7 +1344,7 @@ const countries = [
     deathrate: "16.89"
   },
   {
-    country: "Malta",
+    name: "Malta",
     population: 400214,
     area: 316,
     pop_density: "1266.5",
@@ -1560,7 +1356,7 @@ const countries = [
     deathrate: "8.1"
   },
   {
-    country: "Marshall Islands",
+    name: "Marshall Islands",
     population: 60422,
     area: 11854,
     pop_density: "5.1",
@@ -1572,7 +1368,7 @@ const countries = [
     deathrate: "4.78"
   },
   {
-    country: "Martinique",
+    name: "Martinique",
     population: 436131,
     area: 1100,
     pop_density: "396.5",
@@ -1584,7 +1380,7 @@ const countries = [
     deathrate: "6.48"
   },
   {
-    country: "Mauritania",
+    name: "Mauritania",
     population: 3177388,
     area: 1030700,
     pop_density: "3.1",
@@ -1596,7 +1392,7 @@ const countries = [
     deathrate: "12.16"
   },
   {
-    country: "Mauritius",
+    name: "Mauritius",
     population: 1240827,
     area: 2040,
     pop_density: "608.3",
@@ -1608,19 +1404,7 @@ const countries = [
     deathrate: "6.86"
   },
   {
-    country: "Mayotte",
-    population: 201234,
-    area: 374,
-    pop_density: "538.1",
-    infant_mortality: "62.4",
-    GDP: 2600,
-    percent_literate: "",
-    climate: "2",
-    birthrate: "40.95",
-    deathrate: "7.7"
-  },
-  {
-    country: "Mexico",
+    name: "Mexico",
     population: 107449525,
     area: 1972550,
     pop_density: "54.5",
@@ -1632,7 +1416,7 @@ const countries = [
     deathrate: "4.74"
   },
   {
-    country: "Micronesia, Fed. St. ",
+    name: "Micronesia",
     population: 108004,
     area: 702,
     pop_density: "153.9",
@@ -1644,7 +1428,7 @@ const countries = [
     deathrate: "4.75"
   },
   {
-    country: "Moldova ",
+    name: "Moldova",
     population: 4466706,
     area: 33843,
     pop_density: "132.0",
@@ -1656,7 +1440,7 @@ const countries = [
     deathrate: "12.64"
   },
   {
-    country: "Monaco ",
+    name: "Monaco",
     population: 32543,
     area: 2,
     pop_density: "16271.5",
@@ -1668,7 +1452,7 @@ const countries = [
     deathrate: "12.91"
   },
   {
-    country: "Mongolia ",
+    name: "Mongolia",
     population: 2832224,
     area: 1564116,
     pop_density: "1.8",
@@ -1680,19 +1464,7 @@ const countries = [
     deathrate: "6.95"
   },
   {
-    country: "Montserrat ",
-    population: 9439,
-    area: 102,
-    pop_density: "92.5",
-    infant_mortality: "7.35",
-    GDP: 3400,
-    percent_literate: "97.0",
-    climate: "2",
-    birthrate: "17.59",
-    deathrate: "7.1"
-  },
-  {
-    country: "Morocco ",
+    name: "Morocco",
     population: 33241259,
     area: 446550,
     pop_density: "74.4",
@@ -1704,7 +1476,7 @@ const countries = [
     deathrate: "5.58"
   },
   {
-    country: "Mozambique ",
+    name: "Mozambique",
     population: 19686505,
     area: 801590,
     pop_density: "24.6",
@@ -1716,7 +1488,7 @@ const countries = [
     deathrate: "21.35"
   },
   {
-    country: "Namibia ",
+    name: "Namibia",
     population: 2044147,
     area: 825418,
     pop_density: "2.5",
@@ -1728,7 +1500,7 @@ const countries = [
     deathrate: "18.86"
   },
   {
-    country: "Nauru ",
+    name: "Nauru",
     population: 13287,
     area: 21,
     pop_density: "632.7",
@@ -1740,7 +1512,7 @@ const countries = [
     deathrate: "6.7"
   },
   {
-    country: "Nepal ",
+    name: "Nepal",
     population: 28287147,
     area: 147181,
     pop_density: "192.2",
@@ -1752,7 +1524,7 @@ const countries = [
     deathrate: "9.31"
   },
   {
-    country: "Netherlands ",
+    name: "Netherlands",
     population: 16491461,
     area: 41526,
     pop_density: "397.1",
@@ -1764,31 +1536,7 @@ const countries = [
     deathrate: "8.68"
   },
   {
-    country: "Netherlands Antilles ",
-    population: 221736,
-    area: 960,
-    pop_density: "231.0",
-    infant_mortality: "10.03",
-    GDP: 11400,
-    percent_literate: "96.7",
-    climate: "2",
-    birthrate: "14.78",
-    deathrate: "6.45"
-  },
-  {
-    country: "New Caledonia ",
-    population: 219246,
-    area: 19060,
-    pop_density: "11.5",
-    infant_mortality: "7.72",
-    GDP: 15000,
-    percent_literate: "91.0",
-    climate: "2",
-    birthrate: "18.11",
-    deathrate: "5.69"
-  },
-  {
-    country: "New Zealand ",
+    name: "New Zealand",
     population: 4076140,
     area: 268680,
     pop_density: "15.2",
@@ -1800,7 +1548,7 @@ const countries = [
     deathrate: "7.53"
   },
   {
-    country: "Nicaragua ",
+    name: "Nicaragua",
     population: 5570129,
     area: 129494,
     pop_density: "43.0",
@@ -1812,7 +1560,7 @@ const countries = [
     deathrate: "4.45"
   },
   {
-    country: "Niger ",
+    name: "Niger",
     population: 12525094,
     area: 1267000,
     pop_density: "9.9",
@@ -1824,7 +1572,7 @@ const countries = [
     deathrate: "20.91"
   },
   {
-    country: "Nigeria ",
+    name: "Nigeria",
     population: 131859731,
     area: 923768,
     pop_density: "142.7",
@@ -1836,19 +1584,7 @@ const countries = [
     deathrate: "16.94"
   },
   {
-    country: "N. Mariana Islands ",
-    population: 82459,
-    area: 477,
-    pop_density: "172.9",
-    infant_mortality: "7.11",
-    GDP: 12500,
-    percent_literate: "97.0",
-    climate: "2",
-    birthrate: "19.43",
-    deathrate: "2.29"
-  },
-  {
-    country: "Norway ",
+    name: "Norway",
     population: 4610820,
     area: 323802,
     pop_density: "14.2",
@@ -1860,7 +1596,7 @@ const countries = [
     deathrate: "9.4"
   },
   {
-    country: "Oman ",
+    name: "Oman",
     population: 3102229,
     area: 212460,
     pop_density: "14.6",
@@ -1872,7 +1608,7 @@ const countries = [
     deathrate: "3.81"
   },
   {
-    country: "Pakistan ",
+    name: "Pakistan",
     population: 165803560,
     area: 803940,
     pop_density: "206.2",
@@ -1884,7 +1620,7 @@ const countries = [
     deathrate: "8.23"
   },
   {
-    country: "Palau ",
+    name: "Palau",
     population: 20579,
     area: 458,
     pop_density: "44.9",
@@ -1896,7 +1632,7 @@ const countries = [
     deathrate: "6.8"
   },
   {
-    country: "Panama ",
+    name: "Panama",
     population: 3191319,
     area: 78200,
     pop_density: "40.8",
@@ -1908,7 +1644,7 @@ const countries = [
     deathrate: "5.36"
   },
   {
-    country: "Papua New Guinea ",
+    name: "Papua New Guinea",
     population: 5670544,
     area: 462840,
     pop_density: "12.3",
@@ -1920,7 +1656,7 @@ const countries = [
     deathrate: "7.25"
   },
   {
-    country: "Paraguay ",
+    name: "Paraguay",
     population: 6506464,
     area: 406750,
     pop_density: "16.0",
@@ -1932,7 +1668,7 @@ const countries = [
     deathrate: "4.49"
   },
   {
-    country: "Peru ",
+    name: "Peru",
     population: 28302603,
     area: 1285220,
     pop_density: "22.0",
@@ -1944,7 +1680,7 @@ const countries = [
     deathrate: "6.23"
   },
   {
-    country: "Philippines ",
+    name: "Philippines",
     population: 89468677,
     area: 300000,
     pop_density: "298.2",
@@ -1956,7 +1692,7 @@ const countries = [
     deathrate: "5.41"
   },
   {
-    country: "Poland ",
+    name: "Poland",
     population: 38536869,
     area: 312685,
     pop_density: "123.3",
@@ -1968,7 +1704,7 @@ const countries = [
     deathrate: "9.89"
   },
   {
-    country: "Portugal ",
+    name: "Portugal",
     population: 10605870,
     area: 92391,
     pop_density: "114.8",
@@ -1980,7 +1716,7 @@ const countries = [
     deathrate: "10.5"
   },
   {
-    country: "Puerto Rico ",
+    name: "Puerto Rico",
     population: 3927188,
     area: 13790,
     pop_density: "284.8",
@@ -1992,7 +1728,7 @@ const countries = [
     deathrate: "7.65"
   },
   {
-    country: "Qatar ",
+    name: "Qatar",
     population: 885359,
     area: 11437,
     pop_density: "77.4",
@@ -2004,19 +1740,7 @@ const countries = [
     deathrate: "4.72"
   },
   {
-    country: "Reunion ",
-    population: 787584,
-    area: 2517,
-    pop_density: "312.9",
-    infant_mortality: "7.78",
-    GDP: 5800,
-    percent_literate: "88.9",
-    climate: "2",
-    birthrate: "18.9",
-    deathrate: "5.49"
-  },
-  {
-    country: "Romania ",
+    name: "Romania",
     population: 22303552,
     area: 237500,
     pop_density: "93.9",
@@ -2028,7 +1752,7 @@ const countries = [
     deathrate: "11.77"
   },
   {
-    country: "Russia ",
+    name: "Russia",
     population: 142893540,
     area: 17075200,
     pop_density: "8.4",
@@ -2040,7 +1764,7 @@ const countries = [
     deathrate: "14.65"
   },
   {
-    country: "Rwanda ",
+    name: "Rwanda",
     population: 8648248,
     area: 26338,
     pop_density: "328.4",
@@ -2052,19 +1776,7 @@ const countries = [
     deathrate: "16.09"
   },
   {
-    country: "Saint Helena ",
-    population: 7502,
-    area: 413,
-    pop_density: "18.2",
-    infant_mortality: "19",
-    GDP: 2500,
-    percent_literate: "97.0",
-    climate: "",
-    birthrate: "12.13",
-    deathrate: "6.53"
-  },
-  {
-    country: "Saint Kitts & Nevis ",
+    name: "Saint Kitts and Nevis",
     population: 39129,
     area: 261,
     pop_density: "149.9",
@@ -2076,7 +1788,7 @@ const countries = [
     deathrate: "8.33"
   },
   {
-    country: "Saint Lucia ",
+    name: "Saint Lucia",
     population: 168458,
     area: 616,
     pop_density: "273.5",
@@ -2088,19 +1800,7 @@ const countries = [
     deathrate: "5.08"
   },
   {
-    country: "St Pierre & Miquelon ",
-    population: 7026,
-    area: 242,
-    pop_density: "29.0",
-    infant_mortality: "7.54",
-    GDP: 6900,
-    percent_literate: "99.0",
-    climate: "",
-    birthrate: "13.52",
-    deathrate: "6.83"
-  },
-  {
-    country: "Saint Vincent and the Grenadines ",
+    name: "Saint Vincent and the Grenadines",
     population: 117848,
     area: 389,
     pop_density: "303.0",
@@ -2112,7 +1812,7 @@ const countries = [
     deathrate: "5.98"
   },
   {
-    country: "Samoa ",
+    name: "Samoa",
     population: 176908,
     area: 2944,
     pop_density: "60.1",
@@ -2124,7 +1824,7 @@ const countries = [
     deathrate: "6.62"
   },
   {
-    country: "San Marino ",
+    name: "San Marino",
     population: 29251,
     area: 61,
     pop_density: "479.5",
@@ -2136,7 +1836,7 @@ const countries = [
     deathrate: "8.17"
   },
   {
-    country: "Sao Tome & Principe ",
+    name: "Sao Tome and Principe",
     population: 193413,
     area: 1001,
     pop_density: "193.2",
@@ -2148,7 +1848,7 @@ const countries = [
     deathrate: "6.47"
   },
   {
-    country: "Saudi Arabia ",
+    name: "Saudi Arabia",
     population: 27019731,
     area: 1960582,
     pop_density: "13.8",
@@ -2160,7 +1860,7 @@ const countries = [
     deathrate: "2.58"
   },
   {
-    country: "Senegal ",
+    name: "Senegal",
     population: 11987121,
     area: 196190,
     pop_density: "61.1",
@@ -2172,7 +1872,7 @@ const countries = [
     deathrate: "9.42"
   },
   {
-    country: "Serbia ",
+    name: "Serbia",
     population: 9396411,
     area: 88361,
     pop_density: "106.3",
@@ -2184,7 +1884,7 @@ const countries = [
     deathrate: ""
   },
   {
-    country: "Seychelles ",
+    name: "Seychelles",
     population: 81541,
     area: 455,
     pop_density: "179.2",
@@ -2196,7 +1896,7 @@ const countries = [
     deathrate: "6.29"
   },
   {
-    country: "Sierra Leone ",
+    name: "Sierra Leone",
     population: 6005250,
     area: 71740,
     pop_density: "83.7",
@@ -2208,7 +1908,7 @@ const countries = [
     deathrate: "23.03"
   },
   {
-    country: "Singapore ",
+    name: "Singapore",
     population: 4492150,
     area: 693,
     pop_density: "6482.2",
@@ -2220,7 +1920,7 @@ const countries = [
     deathrate: "4.28"
   },
   {
-    country: "Slovakia ",
+    name: "Slovakia",
     population: 5439448,
     area: 48845,
     pop_density: "111.4",
@@ -2232,7 +1932,7 @@ const countries = [
     deathrate: "9.45"
   },
   {
-    country: "Slovenia ",
+    name: "Slovenia",
     population: 2010347,
     area: 20273,
     pop_density: "99.2",
@@ -2244,7 +1944,7 @@ const countries = [
     deathrate: "10.31"
   },
   {
-    country: "Solomon Islands ",
+    name: "Solomon Islands",
     population: 552438,
     area: 28450,
     pop_density: "19.4",
@@ -2256,7 +1956,7 @@ const countries = [
     deathrate: "3.92"
   },
   {
-    country: "Somalia ",
+    name: "Somalia",
     population: 8863338,
     area: 637657,
     pop_density: "13.9",
@@ -2268,7 +1968,7 @@ const countries = [
     deathrate: "16.63"
   },
   {
-    country: "South Africa ",
+    name: "South Africa",
     population: 44187637,
     area: 1219912,
     pop_density: "36.2",
@@ -2280,7 +1980,7 @@ const countries = [
     deathrate: "22"
   },
   {
-    country: "Spain ",
+    name: "Spain",
     population: 40397842,
     area: 504782,
     pop_density: "80.0",
@@ -2292,7 +1992,7 @@ const countries = [
     deathrate: "9.72"
   },
   {
-    country: "Sri Lanka ",
+    name: "Sri Lanka",
     population: 20222240,
     area: 65610,
     pop_density: "308.2",
@@ -2304,7 +2004,7 @@ const countries = [
     deathrate: "6.52"
   },
   {
-    country: "Sudan ",
+    name: "Sudan",
     population: 41236378,
     area: 2505810,
     pop_density: "16.5",
@@ -2316,7 +2016,7 @@ const countries = [
     deathrate: "8.97"
   },
   {
-    country: "Suriname ",
+    name: "Suriname",
     population: 439117,
     area: 163270,
     pop_density: "2.7",
@@ -2328,7 +2028,7 @@ const countries = [
     deathrate: "7.27"
   },
   {
-    country: "Swaziland ",
+    name: "Swaziland",
     population: 1136334,
     area: 17363,
     pop_density: "65.5",
@@ -2340,7 +2040,7 @@ const countries = [
     deathrate: "29.74"
   },
   {
-    country: "Sweden ",
+    name: "Sweden",
     population: 9016596,
     area: 449964,
     pop_density: "20.0",
@@ -2352,7 +2052,7 @@ const countries = [
     deathrate: "10.31"
   },
   {
-    country: "Switzerland ",
+    name: "Switzerland",
     population: 7523934,
     area: 41290,
     pop_density: "182.2",
@@ -2364,7 +2064,7 @@ const countries = [
     deathrate: "8.49"
   },
   {
-    country: "Syria ",
+    name: "Syria",
     population: 18881361,
     area: 185180,
     pop_density: "102.0",
@@ -2376,7 +2076,7 @@ const countries = [
     deathrate: "4.81"
   },
   {
-    country: "Taiwan ",
+    name: "Taiwan",
     population: 23036087,
     area: 35980,
     pop_density: "640.3",
@@ -2388,7 +2088,7 @@ const countries = [
     deathrate: "6.48"
   },
   {
-    country: "Tajikistan ",
+    name: "Tajikistan",
     population: 7320815,
     area: 143100,
     pop_density: "51.2",
@@ -2400,7 +2100,7 @@ const countries = [
     deathrate: "8.25"
   },
   {
-    country: "Tanzania ",
+    name: "Tanzania",
     population: 37445392,
     area: 945087,
     pop_density: "39.6",
@@ -2412,7 +2112,7 @@ const countries = [
     deathrate: "16.39"
   },
   {
-    country: "Thailand ",
+    name: "Thailand",
     population: 64631595,
     area: 514000,
     pop_density: "125.7",
@@ -2424,7 +2124,7 @@ const countries = [
     deathrate: "7.04"
   },
   {
-    country: "Togo ",
+    name: "Togo",
     population: 5548702,
     area: 56785,
     pop_density: "97.7",
@@ -2436,7 +2136,7 @@ const countries = [
     deathrate: "9.83"
   },
   {
-    country: "Tonga ",
+    name: "Tonga",
     population: 114689,
     area: 748,
     pop_density: "153.3",
@@ -2448,7 +2148,7 @@ const countries = [
     deathrate: "5.28"
   },
   {
-    country: "Trinidad & Tobago ",
+    name: "Trinidad and Tobago",
     population: 1065842,
     area: 5128,
     pop_density: "207.9",
@@ -2460,7 +2160,7 @@ const countries = [
     deathrate: "10.57"
   },
   {
-    country: "Tunisia ",
+    name: "Tunisia",
     population: 10175014,
     area: 163610,
     pop_density: "62.2",
@@ -2472,7 +2172,7 @@ const countries = [
     deathrate: "5.13"
   },
   {
-    country: "Turkey ",
+    name: "Turkey",
     population: 70413958,
     area: 780580,
     pop_density: "90.2",
@@ -2484,7 +2184,7 @@ const countries = [
     deathrate: "5.97"
   },
   {
-    country: "Turkmenistan ",
+    name: "Turkmenistan",
     population: 5042920,
     area: 488100,
     pop_density: "10.3",
@@ -2496,19 +2196,7 @@ const countries = [
     deathrate: "8.6"
   },
   {
-    country: "Turks & Caicos Is ",
-    population: 21152,
-    area: 430,
-    pop_density: "49.2",
-    infant_mortality: "15.67",
-    GDP: 9600,
-    percent_literate: "98.0",
-    climate: "2",
-    birthrate: "21.84",
-    deathrate: "4.21"
-  },
-  {
-    country: "Tuvalu ",
+    name: "Tuvalu",
     population: 11810,
     area: 26,
     pop_density: "454.2",
@@ -2520,7 +2208,7 @@ const countries = [
     deathrate: "7.11"
   },
   {
-    country: "Uganda ",
+    name: "Uganda",
     population: 28195754,
     area: 236040,
     pop_density: "119.5",
@@ -2532,7 +2220,7 @@ const countries = [
     deathrate: "12.24"
   },
   {
-    country: "Ukraine ",
+    name: "Ukraine",
     population: 46710816,
     area: 603700,
     pop_density: "77.4",
@@ -2544,7 +2232,7 @@ const countries = [
     deathrate: "14.39"
   },
   {
-    country: "United Arab Emirates ",
+    name: "United Arab Emirates",
     population: 2602713,
     area: 82880,
     pop_density: "31.4",
@@ -2556,7 +2244,7 @@ const countries = [
     deathrate: "4.4"
   },
   {
-    country: "United Kingdom ",
+    name: "United Kingdom",
     population: 60609153,
     area: 244820,
     pop_density: "247.6",
@@ -2568,7 +2256,7 @@ const countries = [
     deathrate: "10.13"
   },
   {
-    country: "United States ",
+    name: "United States",
     population: 298444215,
     area: 9631420,
     pop_density: "31.0",
@@ -2580,7 +2268,7 @@ const countries = [
     deathrate: "8.26"
   },
   {
-    country: "Uruguay ",
+    name: "Uruguay",
     population: 3431932,
     area: 176220,
     pop_density: "19.5",
@@ -2592,7 +2280,7 @@ const countries = [
     deathrate: "9.05"
   },
   {
-    country: "Uzbekistan ",
+    name: "Uzbekistan",
     population: 27307134,
     area: 447400,
     pop_density: "61.0",
@@ -2604,7 +2292,7 @@ const countries = [
     deathrate: "7.84"
   },
   {
-    country: "Vanuatu ",
+    name: "Vanuatu",
     population: 208869,
     area: 12200,
     pop_density: "17.1",
@@ -2616,7 +2304,7 @@ const countries = [
     deathrate: "7.82"
   },
   {
-    country: "Venezuela ",
+    name: "Venezuela",
     population: 25730435,
     area: 912050,
     pop_density: "28.2",
@@ -2628,7 +2316,7 @@ const countries = [
     deathrate: "4.92"
   },
   {
-    country: "Vietnam ",
+    name: "Vietnam",
     population: 84402966,
     area: 329560,
     pop_density: "256.1",
@@ -2640,43 +2328,7 @@ const countries = [
     deathrate: "6.22"
   },
   {
-    country: "Virgin Islands ",
-    population: 108605,
-    area: 1910,
-    pop_density: "56.9",
-    infant_mortality: "8.03",
-    GDP: 17200,
-    percent_literate: "",
-    climate: "2",
-    birthrate: "13.96",
-    deathrate: "6.43"
-  },
-  {
-    country: "Wallis and Futuna ",
-    population: 16025,
-    area: 274,
-    pop_density: "58.5",
-    infant_mortality: "",
-    GDP: 3700,
-    percent_literate: "50.0",
-    climate: "2",
-    birthrate: "",
-    deathrate: ""
-  },
-  {
-    country: "West Bank ",
-    population: 2460492,
-    area: 5860,
-    pop_density: "419.9",
-    infant_mortality: "19.62",
-    GDP: 800,
-    percent_literate: "",
-    climate: "3",
-    birthrate: "31.67",
-    deathrate: "3.92"
-  },
-  {
-    country: "Western Sahara ",
+    name: "Western Sahara",
     population: 273008,
     area: 266000,
     pop_density: "1.0",
@@ -2688,7 +2340,7 @@ const countries = [
     deathrate: ""
   },
   {
-    country: "Yemen ",
+    name: "Yemen",
     population: 21456188,
     area: 527970,
     pop_density: "40.6",
@@ -2700,7 +2352,7 @@ const countries = [
     deathrate: "8.3"
   },
   {
-    country: "Zambia ",
+    name: "Zambia",
     population: 11502010,
     area: 752614,
     pop_density: "15.3",
@@ -2712,7 +2364,7 @@ const countries = [
     deathrate: "19.93"
   },
   {
-    country: "Zimbabwe ",
+    name: "Zimbabwe",
     population: 12236805,
     area: 390580,
     pop_density: "31.3",
@@ -2733,15 +2385,15 @@ const continents = [
       "Angola",
       "Benin",
       "Botswana",
-      "Burkina",
+      "Burkina Faso",
       "Burundi",
       "Cameroon",
       "Cape Verde",
       "Central African Republic",
       "Chad",
       "Comoros",
-      "Congo",
-      "Congo, Dem. Rep. ",
+      "Republic of the Congo",
+      "Democratic Republic of the Congo",
       "Djibouti",
       "Egypt",
       "Equatorial Guinea",
@@ -2752,7 +2404,7 @@ const continents = [
       "Ghana",
       "Guinea",
       "Guinea-Bissau",
-      "Ivory Coast",
+      "Cote D'Ivoire",
       "Kenya",
       "Lesotho",
       "Liberia",
@@ -2781,6 +2433,7 @@ const continents = [
       "Togo",
       "Tunisia",
       "Uganda",
+      "Western Sahara",
       "Zambia",
       "Zimbabwe"
     ]
@@ -2819,12 +2472,13 @@ const continents = [
       "Pakistan",
       "Philippines",
       "Qatar",
-      "Russian Federation",
+      "Russia",
       "Saudi Arabia",
       "Singapore",
       "Sri Lanka",
       "Syria",
       "Tajikistan",
+      "Taiwan",
       "Thailand",
       "Turkey",
       "Turkmenistan",
