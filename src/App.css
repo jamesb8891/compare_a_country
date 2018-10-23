@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-header {
+.app-header {
   align-items: center;
   background-color: #282c34;
   color: white;
@@ -12,3 +12,4 @@ header {
   height: 100px;
   justify-content: space-between;
 }
+

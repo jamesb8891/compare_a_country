@@ -3,25 +3,14 @@ import './Filter.css';
 
 class Filter extends Component {
   render() {
+  let navBarItems = ['Population', 'GDP', 'Area', 'Climate', 'Continent'];
     return (
       <nav>
-        <li>
-          Population
-        </li>
-        <li>
-          GDP
-        </li>
-        <li>
-          Area
-        </li>
-        <li>
-          Climate
-        </li>
-        <li>
-          Continent
-        </li>
+        {navBarItems.map((item) => {
+                return <li> {item} </li>
+              }) }
       </nav>
-    );
+    )
   }
 }
 export default Filter;
