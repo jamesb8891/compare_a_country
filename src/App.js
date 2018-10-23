@@ -3,6 +3,7 @@ import './App.css';
 import Filter from './Filter.js';
 import Search from './Search.js';
 import List from './List.js';
+import Card from './Card.js';
 
 class App extends Component {
   render() {
@@ -13,7 +14,8 @@ class App extends Component {
           <Search />
         </header>
         <main>
-        <List />
+          <List className="country-list-container" />
+          <Card className="country-card-container" />
         </main>
       </div>
     );

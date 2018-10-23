@@ -1,0 +1,21 @@
+form {
+  width: 280px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+input {
+  width: 180px;
+  height: 30px;
+  margin-right:10px;
+  font-size: 1em;
+  padding-left: 5px;
+}
+
+button {
+  height: 36px;
+  font-weight: 700;
+  font-size: 1em;
+  color: steelblue;
+}
