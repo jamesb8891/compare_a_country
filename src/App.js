@@ -15,6 +15,7 @@ class App extends Component {
         </header>
         <main className = "App-main">
           <List className="list-container" />
+          {/*Added multiple card components just so we can observe what they will look like on the dom*/}
           <Card className="card" />
           <Card className="card" />
           <Card className="card" />
