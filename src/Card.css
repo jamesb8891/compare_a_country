@@ -8,7 +8,7 @@
 
 .card {
   align-items: center;
-  background-color: rgb(227, 137, 117, .6);
+  background-color: rgb(227, 137, 117, .95);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
