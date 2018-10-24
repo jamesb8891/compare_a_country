@@ -10,20 +10,24 @@ class Search extends Component {
   }
     handleChange = (event) => {
       this.setState({
-        countryName: event.target.value
+        countryName: event.target.value.toLowerCase()
       });
     }
 
     takeCountry = (event, country) => {
       event.preventDefault();  
-      document.querySelector('.input').value = '';
+      this.props.updateCountryInput(this.state.countryName)
+      this.setState({
+        countryName: ''
+      })
     }
+
   
   render() {
     return (
-      <form>
-        <input className= "input"type="text" placeholder="Search for a Country" onChange={this.handleChange} country={this.state.countryName}/>
-        <button onClick={this.takeCountry}className="submit-button" type="submit">search!</button>
+      <form onSubmit={this.takeCountry}>
+        <input className="input" type="text" placeholder="Search for a Country" value={this.state.countryName} onChange={this.handleChange} country={this.state.countryName}/>
+        <button className="submit-button" type="submit">search!</button>
       </form>
     )
   }

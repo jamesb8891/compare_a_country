@@ -23,17 +23,17 @@ class Card extends Component {
           <input className = "delete-button" type="image" src={close} />
           
         </header>
-        <main class="card-stats-container">
-          <p class="country-pop">
+        <main className="card-stats-container">
+          <p className="country-pop">
           population: 31056997
           </p>
-          <p class="country-GDP">
+          <p className="country-GDP">
           GDP per capita: $400
           </p>
-          <p class="country-area">
+          <p className="country-area">
           area: 3085 sq miles
           </p>
-          <p class="country-density">
+          <p className="country-density">
           pop. density: 400 people/sq mile
           </p>
         </main>
