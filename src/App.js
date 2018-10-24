@@ -5,7 +5,7 @@ import Search from './Search.js';
 import List from './List.js';
 import Card from './Card.js';
 
-class App extends Component {
+class App extends Component {  
   render() {
     return (
       <div className="App">
@@ -16,12 +16,12 @@ class App extends Component {
         <main className = "App-main">
           <List className="list-container" />
           {/*Added multiple card components just so we can observe what they will look like on the dom*/}
+          {/* <Card className="card" />
           <Card className="card" />
-          <Card className="card" />
-          <Card className="card" />
+          <Card className="card" /> */}
         </main>
       </div>
-    );
+    )
   }
 }
 
