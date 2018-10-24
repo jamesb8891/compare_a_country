@@ -17,11 +17,13 @@ class Search extends Component {
     takeCountry = (event, country) => {
       event.preventDefault();  
       this.props.updateCountryInput(this.state.countryName)
+      this.props.findCountry(this.state.countryName);
       this.setState({
         countryName: ''
       })
     }
 
+    
   
   render() {
     return (

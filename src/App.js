@@ -28,6 +28,8 @@ class App extends Component {
           })
         })
         .catch(error => console.log(error))
+
+        console.log('fetched')
     }
 
     getContinentData = () => {
@@ -42,23 +44,30 @@ class App extends Component {
     }
 
     updateCountryInput = (countryName) => {
-      console.log(countryName);
       this.setState({
         countryInput: countryName
       })
+    }
+
+    findCountry = (countryName) => {
+      let chosenCountryObj = this.state.countryData.countries.find((country) => {
+        if(country.name.toLowerCase() === countryName) {
+          return country;
+        }
+      })
+        console.log(chosenCountryObj);
     }
 
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput}/>
+          <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
           <Filter />
         </header>
         <main className = "App-main">
           <List className="list-container" />
-          {/*Added multiple card components just so we can observe what they will look like on the dom*/}
-         <Card className="card" />
+          <Card className="card" />
           
         </main>
       </div>
