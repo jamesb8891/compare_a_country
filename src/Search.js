@@ -5,8 +5,8 @@ class Search extends Component {
   render() {
     return (
       <form>
-        <input type="text" placeholder="Search for a Country"/>
-        <button className="submit-" type="submit">Submit</button>
+        <input className = "input"type="text" placeholder="Search for a Country"/>
+        <button className="submit-" type="submit">search!</button>
       </form>
     )
   }

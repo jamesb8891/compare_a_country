@@ -9,13 +9,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-          <Filter />
+        <header className="App-header">
           <Search />
+          <Filter />
         </header>
-        <main>
-          <List className="country-list-container" />
-          <Card className="country-card-container" />
+        <main className = "App-main">
+          <List className="list-container" />
+          {/*Added multiple card components just so we can observe what they will look like on the dom*/}
+          <Card className="card" />
+          <Card className="card" />
+          <Card className="card" />
         </main>
       </div>
     );

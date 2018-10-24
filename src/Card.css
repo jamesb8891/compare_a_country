@@ -1,0 +1,66 @@
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+  width: 90%;
+}
+
+.card {
+  align-items: center;
+  background-color: rgb(227, 137, 117, .95);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
+  min-width: 300px;
+  padding: 4px;
+  /*width: 300px;*/
+}
+
+.country-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2rem;
+  justify-content: flex-start;
+  width: 80%;
+}
+
+.country-flag {
+  width: 35%
+}
+
+.country-name {
+  margin-bottom: 0;
+}
+
+.continent-name {
+  margin-top: 0;
+  font-size: .8rem;
+}
+
+.card-stats-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.star-button, .delete-button {
+  height: 30px;
+  margin-top: 0;
+  opacity: 1;
+  transition: opacity .6s;
+  width: 34px;
+}
+
+.star-button {
+  color: white;
+}
+
+.star-button:hover, .delete-button:hover {
+  opacity: .4;
+}
