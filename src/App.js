@@ -28,8 +28,6 @@ class App extends Component {
           })
         })
         .catch(error => console.log(error))
-
-        console.log('fetched')
     }
 
     getContinentData = () => {
@@ -55,7 +53,6 @@ class App extends Component {
           return country;
         }
       })
-        console.log(chosenCountryObj);
     }
 
   render() {
