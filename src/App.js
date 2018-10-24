@@ -9,10 +9,17 @@ class App extends Component {
   constructor() {
     super(); 
     this.state = {
-      countryData: []
+      countryData: [],
+      continentData: [],
+      countryInput: ''
     }
   } 
     componentDidMount = () => {
+        this.getCountryData();
+        this.getContinentData();
+    }
+
+    getCountryData = () => {
       fetch('http://whateverly-datasets.herokuapp.com/api/v1/countries')
         .then(response => response.json())
         .then(countries => {
@@ -21,22 +28,44 @@ class App extends Component {
           })
         })
         .catch(error => console.log(error))
-        console.log(this.state.countryData)
+    }
+
+    getContinentData = () => {
+      fetch('http://whateverly-datasets.herokuapp.com/api/v1/continents')
+        .then(response => response.json())
+        .then(continents => {
+          this.setState({
+            continentData: continents
+          })
+        })
+        .catch(error => console.log(error))
+    }
+
+    updateCountryInput = (countryName) => {
+      this.setState({
+        countryInput: countryName
+      })
+    }
+
+    findCountry = (countryName) => {
+      let chosenCountryObj = this.state.countryData.countries.find((country) => {
+        if(country.name.toLowerCase() === countryName) {
+          return country;
+        }
+      })
     }
 
   render() {
     return (
       <div className="App">
         <header className="App-header">
-          <Search />
+          <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
           <Filter />
         </header>
         <main className = "App-main">
           <List className="list-container" />
-          {/*Added multiple card components just so we can observe what they will look like on the dom*/}
-          {/* <Card className="card" />
           <Card className="card" />
-          <Card className="card" /> */}
+          
         </main>
       </div>
     )
