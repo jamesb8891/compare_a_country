@@ -11,7 +11,8 @@ class App extends Component {
     this.state = {
       countryData: [],
       continentData: [],
-      countryInput: ''
+      countryInput: '', 
+      displayCards: []
     }
   } 
     componentDidMount = () => {
@@ -53,6 +54,9 @@ class App extends Component {
           return country;
         }
       })
+      this.setState({
+      displayCards: [...this.state.displayCards, chosenCountryObj]
+      })
     }
 
   render() {
@@ -64,11 +68,11 @@ class App extends Component {
         </header>
         <main className = "App-main">
           <List className="list-container" />
-          <Card className="card" />
-          
         </main>
+        { cards = displayCards.map(obj => (<Card card/>)}
       </div>
     )
+
   }
 }
 
