@@ -15,7 +15,7 @@ class Card extends Component {
             {this.props.country.name}
             </h1>
             <p className = "continent-name">
-            continent
+            {this.props.continent.name}
             </p>
           </div>
           <input className = "delete-button" type="image" src={close} /> 

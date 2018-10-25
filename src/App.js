@@ -82,7 +82,7 @@ class App extends Component {
         </header>
         <main className = "App-main">
           <List className="list-container" />
-          <CardContainer className="card-container" displayCards={this.state.displayCards} />
+          <CardContainer className="card-container" displayCards={this.state.displayCards} continentData={this.state.continentData} />
         </main>
       </div> 
         )
