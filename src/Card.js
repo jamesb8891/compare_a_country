@@ -5,7 +5,16 @@ import star from './images/star.png';
 import close from './images/close.png';
 
 class Card extends Component {
-    render() {
+  constructor(props) {
+    super(props);
+  }
+
+  deleteCard = (event) => {
+    event.preventDefault();
+    this.props.deleteCard(this);
+  }
+
+  render() {
     return (
       <div className ="card">
         <header className="card-header">
@@ -18,7 +27,7 @@ class Card extends Component {
             {this.props.continent.name}
             </p>
           </div>
-          <input className = "delete-button" type="image" src={close} /> 
+          <input className = "delete-button" type="image" src={close} onClick={this.deleteCard} /> 
         </header>
         <main className="card-stats-container">
           <p className="country-pop">

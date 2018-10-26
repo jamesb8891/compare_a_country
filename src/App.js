@@ -60,6 +60,13 @@ class App extends Component {
       })
     }
 
+    deleteCard = (deletedCard) => {
+      //set the state of the cards so the array of display cards no longer contains that country
+      this.setState({
+        displayCards: this.state.displayCards.filter(item => item !== deletedCard.props.country)
+        })
+    }
+
   render() {
     if (this.state.displayCards.length < 1) {
     return (
@@ -82,11 +89,11 @@ class App extends Component {
         </header>
         <main className = "App-main">
           <List className="list-container" />
-          <CardContainer className="card-container" displayCards={this.state.displayCards} continentData={this.state.continentData} />
+          <CardContainer className="card-container" displayCards={this.state.displayCards} continentData={this.state.continentData} deleteCard={this.deleteCard} />
         </main>
       </div> 
-        )
-      }
+      )
+    }
   }
 }
 
