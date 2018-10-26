@@ -23,13 +23,11 @@ class Search extends Component {
       })
     }
 
-    
-  
   render() {
     return (
       <form onSubmit={this.takeCountry}>
         <input className="input" type="text" placeholder="Search for a Country" value={this.state.countryName} onChange={this.handleChange} country={this.state.countryName}/>
-        <button className="submit-button" type="submit">search!</button>
+        <button className="submit-button" type="submit"> search! </button>
       </form>
     )
   }

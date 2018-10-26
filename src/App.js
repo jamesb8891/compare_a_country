@@ -4,6 +4,7 @@ import Filter from './Filter.js';
 import Search from './Search.js';
 import List from './List.js';
 import Card from './Card.js';
+import CardContainer from './CardContainer.js';
 
 class App extends Component {  
   constructor() {
@@ -49,17 +50,28 @@ class App extends Component {
     }
 
     findCountry = (countryName) => {
-      let chosenCountryObj = this.state.countryData.countries.find((country) => {
-        if(country.name.toLowerCase() === countryName) {
-          return country;
-        }
-      })
+
+        let chosenCountryObj = this.state.countryData.countries.find((country) => {
+          if (country.name.toLowerCase() === countryName) {
+            return country;
+          }
+        })
+        if (!this.state.displayCards.includes(chosenCountryObj)) {
+        this.setState({
+        displayCards: [...this.state.displayCards, chosenCountryObj]
+        }) 
+      }
+    }
+
+    deleteCard = (deletedCard) => {
+      //set the state of the cards so the array of display cards no longer contains that country
       this.setState({
-      displayCards: [...this.state.displayCards, chosenCountryObj]
-      })
+        displayCards: this.state.displayCards.filter(item => item !== deletedCard.props.country)
+        })
     }
 
   render() {
+    if (this.state.displayCards.length < 1) {
     return (
       <div className="App">
         <header className="App-header">
@@ -69,10 +81,22 @@ class App extends Component {
         <main className = "App-main">
           <List className="list-container" />
         </main>
-        { cards = displayCards.map(obj => (<Card card/>)}
       </div>
-    )
-
+       )
+    } else {
+        return (
+         <div className="App">
+        <header className="App-header">
+          <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
+          <Filter />
+        </header>
+        <main className = "App-main">
+          <List className="list-container" />
+          <CardContainer className="card-container" displayCards={this.state.displayCards} continentData={this.state.continentData} deleteCard={this.deleteCard} />
+        </main>
+      </div> 
+      )
+    }
   }
 }
 
