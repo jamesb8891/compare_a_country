@@ -50,14 +50,17 @@ class App extends Component {
     }
 
     findCountry = (countryName) => {
-      let chosenCountryObj = this.state.countryData.countries.find((country) => {
-        if(country.name.toLowerCase() === countryName) {
-          return country;
-        }
-      })
-      this.setState({
-      displayCards: [...this.state.displayCards, chosenCountryObj]
-      })
+
+        let chosenCountryObj = this.state.countryData.countries.find((country) => {
+          if (country.name.toLowerCase() === countryName) {
+            return country;
+          }
+        })
+        if (!this.state.displayCards.includes(chosenCountryObj)) {
+        this.setState({
+        displayCards: [...this.state.displayCards, chosenCountryObj]
+        }) 
+      }
     }
 
     deleteCard = (deletedCard) => {
