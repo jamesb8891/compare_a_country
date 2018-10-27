@@ -13,7 +13,39 @@ class App extends Component {
       countryData: [],
       continentData: [],
       countryInput: '', 
-      displayCards: []
+      displayCards: [], 
+      navigation: [
+        {
+          id: 0, 
+          title: 'Population',
+          selected: false, 
+          key: 'navigation'
+        }, 
+        {
+          id: 1, 
+          title: 'GDP', 
+          selected: false, 
+          key: 'navigation'
+        }, 
+        {
+          id: 2, 
+          title: 'Area', 
+          selected: false,
+          key: 'nav item'
+        }, 
+        {
+          id: 3, 
+          title: 'Climate', 
+          selected: false, 
+          key: 'navigation'
+        }, 
+        {
+          id: 4, 
+          title: 'Continent', 
+          selected: false,
+          key: 'navigation'
+        }
+      ]
     }
   } 
     componentDidMount = () => {
@@ -50,7 +82,6 @@ class App extends Component {
     }
 
     findCountry = (countryName) => {
-
         let chosenCountryObj = this.state.countryData.countries.find((country) => {
           if (country.name.toLowerCase() === countryName) {
             return country;
@@ -64,7 +95,6 @@ class App extends Component {
     }
 
     deleteCard = (deletedCard) => {
-      //set the state of the cards so the array of display cards no longer contains that country
       this.setState({
         displayCards: this.state.displayCards.filter(item => item !== deletedCard.props.country)
         })
@@ -76,7 +106,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
-          <Filter />
+          <Filter items={this.state.navigation}/>
         </header>
         <main className = "App-main">
           <List className="list-container" />
@@ -88,7 +118,7 @@ class App extends Component {
          <div className="App">
         <header className="App-header">
           <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
-          <Filter />
+          <Filter items={this.state.navigation} continentData={this.state.continentData}/>
         </header>
         <main className = "App-main">
           <List className="list-container" />
