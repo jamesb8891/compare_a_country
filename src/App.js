@@ -118,7 +118,7 @@ class App extends Component {
          <div className="App">
         <header className="App-header">
           <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
-          <Filter items={this.state.navigation}/>
+          <Filter items={this.state.navigation} continentData={this.state.continentData}/>
         </header>
         <main className = "App-main">
           <List className="list-container" />
