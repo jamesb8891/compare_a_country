@@ -13,7 +13,12 @@ class App extends Component {
       countryData: [],
       continentData: [],
       countryInput: '', 
-      displayCards: []
+      displayCards: [], 
+      populationItemCliked: false, 
+      gdpItemClicked: false, 
+      areaItemClicked: false, 
+      climateItemClicked: false, 
+      continentItemClicked: false,
     }
   } 
     componentDidMount = () => {
@@ -70,13 +75,43 @@ class App extends Component {
         })
     }
 
+    displayPopulationMenu = () => {
+      this.setState({
+        populationItemCliked: true
+      })
+    }
+
+    displayGdpMenu = () => {
+      this.setState({
+        gdpItemClicked: true
+      })
+    }
+
+    displayAreaMenu = () => {
+      this.setState({
+        areaItemClicked: true
+      })
+    }
+    
+    displayClimateMenu = () => {
+      this.setState({
+        climateItemClicked: true
+      })
+    }
+
+    displayContinentMenu = () => {
+      this.setState({
+        continentItemClicked: true
+      })
+    }
+
   render() {
     if (this.state.displayCards.length < 1) {
     return (
       <div className="App">
         <header className="App-header">
           <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
-          <Filter />
+          <Filter displayPopulationMenu={this.displayPopulationMenu} displayGdpMenu={this.displayGdpMenu} displayAreaMenu={this.displayAreaMenu} displayClimateMenu={this.displayClimateMenu} displayContinentMenu={this.displayContinentMenu}/>
         </header>
         <main className = "App-main">
           <List className="list-container" />
@@ -88,7 +123,7 @@ class App extends Component {
          <div className="App">
         <header className="App-header">
           <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
-          <Filter />
+          <Filter displayPopulationMenu={this.displayPopulationMenu} displayGdpMenu={this.displayGdpMenu} displayAreaMenu={this.displayAreaMenu} displayClimateMenu={this.displayClimateMenu} displayContinentMenu={this.displayContinentMenu}/>
         </header>
         <main className = "App-main">
           <List className="list-container" />
