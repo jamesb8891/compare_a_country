@@ -3,7 +3,6 @@
   background-size: cover;
   font-family: 'Niramit', sans-serif;
   text-align: center;
-  /*transition: all 0.6s;*/
 }
 
 .App-header {
@@ -14,13 +13,11 @@
   flex-direction: row;
   font-size: 1em;
   height: 12vh;
-  /*justify-content: space-between;*/
 }
 
 .App-main {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   height: 84vh;
   padding-top: 10%;
 }
@@ -29,7 +26,7 @@
   height: 100%;
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 
