@@ -1,0 +1,43 @@
+$background-image: url('images/mountains.jpg');
+$light-background: rgb(253, 249, 248);
+$main-text-color: #454F55;
+$font-family: 'Niramit', sans-serif;
+
+@mixin display-flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.App {
+  background-image: $background-image;
+  background-size: cover;
+  font-family: $font-family;
+}
+
+.App-header {
+  @include display-flex(row);
+  background: $light-background;
+  color:  $main-text-color;
+  font-size: 1em;
+  height: 12vh;
+}
+
+.App-main {
+  display: flex;
+  flex-direction: row;
+  height: 84vh;
+  padding-top: 10%;
+}
+
+.card-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Niramit');
