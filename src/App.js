@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './App.scss';
 import Filter from './Filter.js';
 import Search from './Search.js';
 import List from './List.js';

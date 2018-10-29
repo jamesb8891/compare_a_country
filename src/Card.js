@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Card.css';
+import './Card.scss';
 import canada from './images/canada.png';
 import star from './images/star.png';
 import close from './images/close.png';

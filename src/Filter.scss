@@ -1,26 +1,31 @@
-nav {
+$light-background: rgb(253, 249, 248);
+
+@mixin display-flex($direction) {
   display: flex;
-  flex-direction: row;
+  flex-direction: $direction;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav {
+  @include display-flex(row);
   font-size: 1.3em; 
   font-weight: 600;
-  justify-content: space-around;
   min-width: 480px;
 }
 
 nav li {
-  align-items: center;
-  display: flex;
+  @include display-flex(row);
   height: 100%;
-  justify-content: center;
   list-style: none;
   opacity: 1;
   transition: opacity .6s;
   width: 110px;
-}
 
-nav li:hover {
-  cursor: pointer;
-  opacity: .1;
+  &:hover {
+    cursor: pointer;
+    opacity: .1;
+  }
 }
 
 .population-filter {
@@ -28,16 +33,14 @@ nav li:hover {
   background-color: red;
   z-index: 1;
   top: 118px;
-  background-color: rgb(253, 249, 248, 0.8);
+  background-color: $light-background;
   right: 0;
   width: 54%;
   display: flex;
 }
 
 .filter-form {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  @include display-flex(row);
   width: 100%;
   height: 100%;
   font-size: 20px;
