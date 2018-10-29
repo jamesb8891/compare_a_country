@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './Filter.css';
 
 class Filter extends Component {
-  constructor(){
-    super(); 
+  constructor(props){
+    super(props); 
     this.state = {
       selected: ''
     }
@@ -40,12 +40,12 @@ class Filter extends Component {
         </div>
         {/* <div className={this.state.selected === 'Continent' ? 'filter-class' : 'hidden'}>
           <ul>
-            {this.props.continentData.continents.map(continent => {
-              return <li>{continent.name}</li> 
-            })}
-          </ul>
+            {this.props.continentData.map((item) => {
+              return <li>{item.name}</li> 
+              })}
+         </ul>
         </div> */}
-      </div>
+    </div>
     )
   }
 }
