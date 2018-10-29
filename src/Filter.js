@@ -2,85 +2,53 @@ import React, { Component } from 'react';
 import './Filter.scss';
 
 class Filter extends Component {
-  constructor(){
-    super(); 
+  constructor(props){
+    super(props); 
     this.state = {
-      populationSelected: false, 
-      gdpSelected: false, 
-      areaSelected: false, 
-      climateSelected: false,
-      continentSelected: false
+      selected: ''
     }
   }
-  togglePopulation = (event) => {
-    event.preventDefault()
-    this.setState({
-      populationSelected: true
-    })
-  }
 
-  toggleGdp = (event) => {
-    event.preventDefault()
-    this.setState({
-      gdpSelected: true
-    })
-  }
-
-  toggleArea = (event) => {
-    event.preventDefault()
-    this.setState({
-      areaSelected: true
-    })
-  }
-  
-  toggleClimate = (event) => {
-    event.preventDefault()
-    this.setState({
-      climateSelected: true
-    })
-  }
-
-  toggleContinent = (event) => {
-    event.preventDefault()
-    this.setState({
-      continentSelected: true
-    })
-  }
+  toggleSelected = (event) => {
+    let itemName = event.target.getAttribute('name') 
+      this.setState({
+        selected: itemName
+      })
+  }  
 
   render() {
     return (
-      <nav>
-        {this.props.items.map((item) => {
-                return <li>{item.title} </li>
-              }) }
-      </nav>
+      <div>
+        <nav>
+          {this.props.items.map((item) => {
+                return <li name={item.title} className={item.id} onClick={this.toggleSelected}>{item.title}</li>
+              })}
+        </nav>
+        <div className={this.state.selected === 'Population' ? 'filter-class' : 'hidden'}>
+          <form>
+            <input type="text" placeholder="min population"/> 
+            <input type="text" placeholder="max population"/>
+            <button className="population-range-button">Find Countries</button>
+          </form>
+        </div>
+        <div className={this.state.selected === 'GDP' ? 'filter-class' : 'hidden'}>
+          <form>
+            <input type="text" placeholder="min gdp"/> 
+            <input type="text" placeholder="max gdp"/>
+            <button className="gdp-range-button">Find Countries</button>
+          </form>
+        </div>
+        {/* <div className={this.state.selected === 'Continent' ? 'filter-class' : 'hidden'}>
+          <ul>
+            {this.props.continentData.map((item) => {
+              return <li>{item.name}</li> 
+              })}
+         </ul>
+        </div> */}
+    </div>
     )
   }
 }
-// these are the elements that will render when a specific <li> is selected
-{/* <div className="population-filter">
-<form>
-  <input type="text" placeholder="min population"/> 
-  <input type="text" placeholder="max population"/>
-  <button className="population-range-button">Find Countries</button>
-</form>
-</div> */}
-
-{/* <div className="gdp-filter">
-<form>
-  <input type="text" placeholder="min gdp"/> 
-  <input type="text" placeholder="max gdp"/>
-  <button className="gdp-range-button">Find Countries</button>
-</form>
-</div> */}
-
-{/* <div className="continent-list">
-  <ul>
-    {this.props.continentData.continents.map((continent) =>{
-      return <li>{continent.name}</li>
-    })}
-  </ul>
-</div> */}
 
 
 export default Filter;
