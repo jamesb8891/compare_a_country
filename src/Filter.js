@@ -18,7 +18,6 @@ class Filter extends Component {
   }  
 
   render() {  
-    if (this.props.continentData) {
     return (
       <div>
         <nav>
@@ -43,17 +42,19 @@ class Filter extends Component {
         <div className={this.state.selected === 'Continent' ? 'filter-class' : 'hidden'}>
           <ul> 
             {setTimeout(() => {
+              console.log(this.props.continentData.continents);
               {this.props.continentData.continents.map((continent) => {
+                // console.log(continent.name);
                 return <li>{continent.name}</li>
-              })
+                })
               }
-            }, 2)}
+            }, 2000)}
           </ul>
         </div>
     </div>
     
     )  
-            }
+            
   }
 }
 
