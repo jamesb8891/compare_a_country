@@ -21,10 +21,14 @@ This project will help us learn how to build React apps and make an api call to 
 
 ### Design and Layout
 
-##### Our Wireframes:
+##### Our Wireframe:
 
 ![Image of Wireframe](wireframe.png)
 
 ### Collaboration:
+
+@colev1
+@Dhanciles
+@jamesb8891
 
 ##### DTR link:
