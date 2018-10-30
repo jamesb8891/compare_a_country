@@ -28,7 +28,7 @@ nav li {
   }
 }
 
-.population-filter {
+.filter-class {
   position: absolute;
   background-color: red;
   z-index: 1;
@@ -49,4 +49,8 @@ nav li {
 input {
   height: 40px;
   font-size: 20px
+}
+
+.hidden {
+  display: none; 
 }

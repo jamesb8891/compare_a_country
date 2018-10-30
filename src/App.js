@@ -100,6 +100,8 @@ class App extends Component {
         })
     }
 
+    
+
   render() {
     if (this.state.displayCards.length < 1) {
     return (
