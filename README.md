@@ -6,6 +6,13 @@ We built an app in React that utilizes data from the CIA's 'The World Factbook' 
 
 ### Installation Instructions:
 
+* Open Your Terminal
+* Copy the following lines into your terminal:
+* git clone https://github.com/jamesb8891/Weathrly.git
+* cd Weathrly/
+* npm install
+* npm start
+
 
 ### Project Background:
 
