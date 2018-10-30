@@ -6,7 +6,7 @@ We built an app in React that utilizes data from the CIA's 'The World Factbook' 
 
 ### Installation Instructions:
 
-_Open Your Terminal_
+_([hi]Open Your Terminal)_
 * Copy the following lines into your terminal:
 * git clone https://github.com/colev1/compare_a_country.git
 * cd compare_a_country/
