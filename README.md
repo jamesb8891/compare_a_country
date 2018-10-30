@@ -23,7 +23,7 @@ This project will help us learn how to build React apps and make an api call to 
 
 ##### Our Wireframes:
 
-<img width="635" alt="" src="wireframe.png"
+(wireframe.png)
 
 ### Collaboration:
 
