@@ -103,12 +103,12 @@ class App extends Component {
     
 
   render() {
-    if (this.state.displayCards.length < 1) {
+    if (this.state.displayCards.length === 0) {
     return (
       <div className="App">
         <header className="App-header">
           <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
-          <Filter items={this.state.navigation} continentData={this.state.continentData}/>
+          <Filter items={this.state.navigation} continentData={this.state.continentData} countryData={this.state.countryData}/>
         </header>
         <main className = "App-main">
           <List className="list-container" />
@@ -120,11 +120,11 @@ class App extends Component {
          <div className="App">
         <header className="App-header">
           <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
-          <Filter items={this.state.navigation} continentData={this.state.continentData}/>
+          <Filter items={this.state.navigation} continentData={this.state.continentData} countryData={this.state.countryData} />
         </header>
         <main className = "App-main">
           <List className="list-container" />
-          <CardContainer className="card-container" displayCards={this.state.displayCards} continentData={this.state.continentData} deleteCard={this.deleteCard} />
+          <CardContainer className="card-container" displayCards={this.state.displayCards} continentData={this.state.continentData} deleteCard={this.deleteCard}/>
         </main>
       </div> 
       )
