@@ -10,13 +10,15 @@ class Filter extends Component {
   }
 
   toggleSelected = (event) => {
+    event.preventDefault(); 
     let itemName = event.target.getAttribute('name') 
       this.setState({
         selected: itemName
       })
   }  
 
-  render() {
+  render() {  
+    if (this.props.continentData) {
     return (
       <div>
         <nav>
@@ -38,15 +40,20 @@ class Filter extends Component {
             <button className="gdp-range-button">Find Countries</button>
           </form>
         </div>
-        {/* <div className={this.state.selected === 'Continent' ? 'filter-class' : 'hidden'}>
-          <ul>
-            {this.props.continentData.map((item) => {
-              return <li>{item.name}</li> 
-              })}
-         </ul>
-        </div> */}
+        <div className={this.state.selected === 'Continent' ? 'filter-class' : 'hidden'}>
+          <ul> 
+            {setTimeout(() => {
+              {this.props.continentData.continents.map((continent) => {
+                return <li>{continent.name}</li>
+              })
+              }
+            }, 2)}
+          </ul>
+        </div>
     </div>
-    )
+    
+    )  
+            }
   }
 }
 
