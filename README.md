@@ -8,10 +8,15 @@ We built an app in React that utilizes data from the CIA's 'The World Factbook' 
 
 Open Your Terminal
 Copy the following lines into your terminal:
+
 ```git clone https://github.com/colev1/compare_a_country.git```
+
 ```cd compare_a_country/```
+
 ```npm install```
+
 ```npm install node-sass```
+
 ```npm start```
 
 
