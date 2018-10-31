@@ -10,7 +10,7 @@ class CardContainer extends Component {
   render() {
     let cards = this.props.displayCards.map(country => {
       if (country) {
-        let continent = this.props.continentData.continents.find(continent =>
+        let continent = this.props.continentData.find(continent =>
           continent.countries.includes(country.name)
         );
         return (

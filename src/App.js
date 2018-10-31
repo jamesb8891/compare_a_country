@@ -48,7 +48,7 @@ class App extends Component {
       .then(response => response.json())
       .then(countries => {
         this.setState({
-          countryData: countries
+          countryData: countries.countries
         });
       })
       .catch(error => console.log(error));
@@ -59,7 +59,7 @@ class App extends Component {
       .then(response => response.json())
       .then(continents => {
         this.setState({
-          continentData: continents
+          continentData: continents.continents
         });
       })
       .catch(error => console.log(error));
@@ -79,7 +79,7 @@ class App extends Component {
   };
 
   findCountry = countryName => {
-    let chosenCountryObj = this.state.countryData.countries.find(country => {
+    let chosenCountryObj = this.state.countryData.find(country => {
       return country.name.toLowerCase() === countryName;
     });
     if (!this.state.displayCards.includes(chosenCountryObj)) {
@@ -117,7 +117,7 @@ class App extends Component {
   filterByContinent = event => {
     event.preventDefault();
     let chosenContinent = event.target.name;
-    let countriesArr = this.state.continentData.continents.find(continent => {
+    let countriesArr = this.state.continentData.find(continent => {
       if (continent.name === chosenContinent) {
         return continent.countries;
       }

@@ -40,7 +40,7 @@ class Filter extends Component {
     event.preventDefault();
     const minPop = this.state.minPopulation || 0;
     const maxPop = this.state.maxPopulation || 2000000000;
-    const filteredCountries = this.props.countryData.countries.filter(
+    const filteredCountries = this.props.countryData.filter(
       country => {
         if (country.population < maxPop && country.population > minPop) {
           return country;
@@ -60,7 +60,7 @@ class Filter extends Component {
     event.preventDefault();
     const minGDP = this.state.minGDP || 0;
     const maxGDP = this.state.maxGDP || 2000000000;
-    const filteredCountries = this.props.countryData.countries.filter(
+    const filteredCountries = this.props.countryData.filter(
       country => {
         if (country.population < maxGDP && country.population > minGDP) {
           return country.name;
