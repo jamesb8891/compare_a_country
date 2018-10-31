@@ -1,4 +1,4 @@
-$pink-color: #a15429;
+@import "variables";
 
 form {
   align-items: center;
@@ -11,27 +11,26 @@ form {
 }
 
 .input {
+  border: none;
   color: black;
   font-size: 1em;
   height: 50px;
   margin-right: 10px;
   padding-left: 12px;
   width: 70%;
-  // background-color: #B5834F;
-  border: none;
 }
 
 button {
   background-color: $pink-color;
+  border: none;
   color: #bda27f;
-  font-family: "Niramit", sans-serif;
+  font-family: $font-family;
   font-size: 1em;
   font-weight: 700;
   height: 57px;
+  margin: 10px;
   opacity: 1;
   transition: opacity 0.8s;
-  border: none;
-  margin: 10px;
 }
 
 button:hover {

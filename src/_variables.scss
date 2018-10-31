@@ -1,0 +1,22 @@
+//fonts
+@import url("https://fonts.googleapis.com/css?family=Niramit");
+@import url("https://fonts.googleapis.com/css?family=Nova Flat");
+$font-family: "Niramit", sans-serif;
+$header-font-family: "Nova Flat", sans-serif;
+
+//images
+$background-image: url("images/background.jpg");
+$popup-background: url("images/globe.gif");
+
+// colors
+$light-background: #26404d;
+$main-text-color: #bda27f;
+$pink-color: #a15429;
+
+//mixins
+@mixin display-flex($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: space-around;
+  align-items: center;
+}

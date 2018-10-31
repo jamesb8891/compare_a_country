@@ -1,4 +1,4 @@
-$main-text-color: #3d2412;
+@import "variables";
 
 @mixin display-flex($direction) {
   display: flex;
@@ -43,11 +43,10 @@ $main-text-color: #3d2412;
 }
 
 .card-stats-container {
-  @include display-flex(column);
   align-items: unset;
   height: 80%;
   padding: 10px;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .star-button,

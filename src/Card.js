@@ -52,8 +52,7 @@ class Card extends Component {
               pop. density: {country.pop_density}
             </p>
             <button className="show-more-stats" onClick={this.showFirstSide}>
-              {" "}
-              ...show more stats{" "}
+              ...show more stats
             </button>
           </main>
         ) : (
@@ -67,8 +66,7 @@ class Card extends Component {
             <p className="country-area">birth-rate: {country.birthrate}</p>
             <p className="country-density">death-rate: {country.deathrate}</p>
             <button className="show-more-stats" onClick={this.showFirstSide}>
-              {" "}
-              ...show more stats{" "}
+              ...show more stats
             </button>
           </main>
         )}
