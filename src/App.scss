@@ -1,10 +1,9 @@
-$background-image: url('images/background.jpg');
-$popup-background: url('images/globe.gif');
-$light-background: #26404D;
-$main-text-color: #BDA27F;
-$font-family: 'Niramit', sans-serif;
-$pink-color: #A15429;
-
+$background-image: url("images/background.jpg");
+$popup-background: url("images/globe.gif");
+$light-background: #26404d;
+$main-text-color: #bda27f;
+$font-family: "Niramit", sans-serif;
+$pink-color: #a15429;
 
 @mixin display-flex($direction) {
   display: flex;
@@ -28,7 +27,7 @@ $pink-color: #A15429;
   top: 20%;
   h1 {
     font-size: 5.4rem;
-    font-family: 'Nova Flat';
+    font-family: "Nova Flat";
     opacity: 1;
     margin: 0;
     color: $pink-color;
@@ -49,7 +48,7 @@ $pink-color: #A15429;
 .App-header {
   @include display-flex(row);
   background: $light-background;
-  color:  $main-text-color;
+  color: $main-text-color;
   font-size: 1.2em;
   height: 120px;
   align-items: center;
@@ -73,6 +72,4 @@ $pink-color: #A15429;
   display: none;
 }
 
-
-
-@import url('https://fonts.googleapis.com/css?family=Niramit');
+@import url("https://fonts.googleapis.com/css?family=Niramit");

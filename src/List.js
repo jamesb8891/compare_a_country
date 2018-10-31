@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import './List.scss';
+import React, { Component } from "react";
+import "./List.scss";
 // import './ListItem.scss';
 
 class List extends Component {
@@ -7,14 +7,11 @@ class List extends Component {
     super(props);
   }
 
-  
-  render() { 
-    const list = this.props.countriesMatchingFilter.map(country => <li> country.name </li>)
-    return (
-      <div>
-      { list }
-      </div>
-    )
+  render() {
+    const list = this.props.countriesMatchingFilter.map(country => (
+      <li> country.name </li>
+    ));
+    return <div>{list}</div>;
   }
 }
 

@@ -1,5 +1,4 @@
-$main-text-color: #3D2412;
-
+$main-text-color: #3d2412;
 
 @mixin display-flex($direction) {
   display: flex;
@@ -7,7 +6,6 @@ $main-text-color: #3D2412;
   justify-content: space-between;
   align-items: center;
 }
-
 
 .card-header {
   @include display-flex(row);
@@ -18,7 +16,7 @@ $main-text-color: #3D2412;
 
 .card {
   @include display-flex(column);
-  background-color: #B5834F;
+  background-color: #b5834f;
   border-radius: 20px;
   height: 400px;
   width: 300px;
@@ -33,7 +31,7 @@ $main-text-color: #3D2412;
 }
 
 .country-flag {
-  width: 35%
+  width: 35%;
 }
 
 .country-name {
@@ -52,19 +50,19 @@ $main-text-color: #3D2412;
   font-size: 1.1rem;
 }
 
-.star-button, .delete-button {
+.star-button,
+.delete-button {
   height: 30px;
   margin-top: 0;
   opacity: 1;
-  transition: opacity .6s;
+  transition: opacity 0.6s;
   width: 34px;
   border: 1px solid transparent;
   &:hover {
-     opacity: .3;
+    opacity: 0.3;
   }
 }
 
 .star-button {
   color: white;
 }
-
