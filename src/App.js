@@ -29,6 +29,12 @@ class App extends Component {
           title: 'GDP', 
           selected: false, 
           key: 'navigation'
+        },
+        {
+          id: 2, 
+          title: 'Continent', 
+          selected: false, 
+          key: 'navigation'
         }
       ]
     }
@@ -107,6 +113,20 @@ class App extends Component {
       })
     }
 
+    filterByContinent = (event) => {
+      event.preventDefault();
+      let chosenContinent = event.target.name;
+      let countriesArr = this.state.continentData.continents.find(continent => {
+       if (continent.name === chosenContinent) {
+        return continent.countries;
+        }
+      });
+      let countriesMatchingFilter = countriesArr.countries;
+      this.setState({
+        countriesMatchingFilter: countriesMatchingFilter
+      })
+    }
+
   render() {
     if (this.state.displayCards.length === 0) {
     return (
@@ -122,7 +142,7 @@ class App extends Component {
         </div> : null }
         <header className="App-header">
           <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
-          <Filter items={this.state.navigation} continentData={this.state.continentData} countryData={this.state.countryData} displayFilteredCountries={this.displayFilteredCountries} />
+          <Filter items={this.state.navigation} continentData={this.state.continentData} countryData={this.state.countryData} displayFilteredCountries={this.displayFilteredCountries} filterByContinent={this.filterByContinent} countriesMatchingFilter={this.state.countriesMatchingFilter} filteredCountries={this.state.countriesMatchingFilter}/>
         </header>
         <main className = "App-main">
           
@@ -133,8 +153,8 @@ class App extends Component {
         return (
          <div className="App">
         <header className="App-header">
-          <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
-          <Filter items={this.state.navigation} continentData={this.state.continentData} countryData={this.state.countryData} displayFilteredCountries={this.displayFilteredCountries} />
+          <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry} clearAllCountries={this.deleteAllCards} countriesMatchingFilter={this.state.countriesMatchingFilter} />
+          <Filter items={this.state.navigation} continentData={this.state.continentData} countryData={this.state.countryData} displayFilteredCountries={this.displayFilteredCountries} filterByContinent={this.filterByContinent} filteredCountries={this.state.countriesMatchingFilter} />
         </header>
         <main className = "App-main">
          

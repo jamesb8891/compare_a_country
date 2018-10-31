@@ -12,7 +12,7 @@ class CardContainer extends Component {
       if (country) {
       let continent = this.props.continentData.continents.find((continent) => 
        continent.countries.includes(country.name));
-        return ( <Card country={country} continent={continent} key={country.name} deleteCard={this.props.deleteCard}/> )
+        return ( <Card country={country} continent={continent} key={country.name} deleteCard={this.props.deleteCard} className={continent}/> )
       } else {
         this.props.alertUser();
       }

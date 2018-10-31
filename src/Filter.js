@@ -72,6 +72,14 @@ class Filter extends Component {
     })
   }  
 
+  filterByContinent = (event) => {
+    event.preventDefault();
+    let filteredCountries = this.props.filteredCountries;
+    this.setState({
+      filteredCountries: filteredCountries
+    })
+  }
+
   render() { 
       return (
       <div>
@@ -81,10 +89,11 @@ class Filter extends Component {
               })}
         </nav>
         <div className={this.state.selected === 'Population' ? 'filter-class' : 'hidden'}>
+        <h3> Filter countries by population </h3>
           <form onSubmit={this.filterPopulation}>
             <input type="text" placeholder="min population" className="minPopulation" value={this.state.minPopulation} onChange={this.handleChange}/> 
             <input type="text" placeholder="max population" className="maxPopulation" value={this.state.maxPopulation} onChange={this.handleChange}/>
-            <button className="population-range-button" type="submit">Find Countries</button>
+            <button className="population-range-button" type="submit">find countries!</button>
           </form>
           <div className="filtered-countries"> 
               {this.state.filteredCountries.map((country) => {
@@ -93,10 +102,11 @@ class Filter extends Component {
           </div>
         </div>
         <div className={this.state.selected === 'GDP' ? 'filter-class' : 'hidden'}>
+        <h3> Filter countries by GDP per capita </h3>
           <form onSubmit={this.filterGDP}>
             <input type="text" placeholder="min gdp" className="minGDP" value={this.state.minGDP} onChange={this.handleChange}/> 
             <input type="text" placeholder="max gdp" className="maxGDP" value={this.state.maxGDP} onChange={this.handleChange}/>
-            <button className="gdp-range-button" type="submit">Find Countries</button>
+            <button className="gdp-range-button" type="submit">find countries!</button>
           </form>
           <div className="filtered-countries"> 
               {this.state.filteredCountries.map((country) => {
@@ -104,7 +114,24 @@ class Filter extends Component {
               })}
           </div>
         </div>
+        <div className={this.state.selected === 'Continent' ? 'filter-class' : 'hidden'}>
+        <h3> Filter countries by continent </h3>
+          <form>
+            <button className="continent-button" name='Africa'onClick={this.props.filterByContinent}>Africa</button>
+            <button className="continent-button" name='Asia' onClick={this.props.filterByContinent}>Asia</button>
+            <button className="continent-button" name='North America' onClick={this.props.filterByContinent}>North America</button>
+            <button className="continent-button"  name='South America' onClick={this.props.filterByContinent}>South America</button>
+            <button className="continent-button" name='Oceania' onClick={this.props.filterByContinent}>Oceania</button>
+            <button className="continent-button" name='Europe' onClick={this.props.filterByContinent} >Europe</button>
+          </form>
+          <div className="filtered-countries"> 
+              {this.state.filteredCountries.map((country) => {
+                return <li className="country-list">{country.name} </li>
+              })}
+          </div>
+        </div>
       </div>
+
    
       )        
   }

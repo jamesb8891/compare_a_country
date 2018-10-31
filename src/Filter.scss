@@ -9,7 +9,7 @@ $light-background: #26404D;
 
 nav {
   @include display-flex(row);
-  font-size: 1.3em; 
+  font-size: 1.6rem; 
   font-weight: 600;
   min-width: 480px;
 }
@@ -42,10 +42,12 @@ nav li {
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
-}
-
-form {
-  margin: 20px 0 50px 0;
+    form {
+    margin: 0px 0 50px 0;
+  }
+  h3 {
+    @include display-flex(row);
+  }
 }
 
 .filtered-countries {
@@ -75,7 +77,8 @@ form {
 
 input {
   height: 40px;
-  font-size: 20px
+  font-size: 20px;
+  margin: 10px;
 }
 
 .hidden {
