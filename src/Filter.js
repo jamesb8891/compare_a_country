@@ -9,7 +9,8 @@ class Filter extends Component {
       minPopulation: '',
       maxPopulation: '',
       minGDP: '',
-      maxGDP: ''
+      maxGDP: '',
+      filteredCountries: []
     }
   }
 
@@ -18,7 +19,7 @@ class Filter extends Component {
     let itemName = event.target.getAttribute('name') 
       this.setState({
         selected: itemName
-      })
+    })
   }
 
   handleChange = (event) => {
@@ -32,14 +33,17 @@ class Filter extends Component {
     event.preventDefault();
     const minPop = this.state.minPopulation;
     const maxPop = this.state.maxPopulation;
-    this.props.countryData.countries.filter((country) => {
+    const filteredCountries = this.props.countryData.countries.filter((country) => {
       if (country.population < maxPop && country.population > minPop) {
         return country;
       }
-    })
+      console.log(filteredCountries)
+    });
+    this.props.displayFilteredCountries(filteredCountries);
     this.setState({
       minPopulation: '',
-      maxPopulation: ''
+      maxPopulation: '',
+      filteredCountries: filteredCountries
     })
   }
 
@@ -47,25 +51,26 @@ class Filter extends Component {
     event.preventDefault();
     const minGDP = this.state.minGDP;
     const maxGDP = this.state.maxGDP;
-    this.props.countryData.countries.filter((country) => {
+    const filteredCountries = this.props.countryData.countries.filter((country) => {
       if (country.population < maxGDP && country.population > minGDP) {
-        return country;
+        return country.name;
       }
+      
     })
     this.setState({
       minGDP: '',
-      maxGDP: ''
+      maxGDP: '',
+      filteredCountries: filteredCountries
     })
   }  
 
-
-
   render() {  
-    return (
+    if (!this.state.filteredCountries) {
+      return (
       <div>
         <nav>
           {this.props.items.map((item) => {
-                return <li name={item.title} className={item.id} onClick={this.toggleSelected}>{item.title}</li>
+                return <li name={item.title} className={item.id} onClick={this.toggleSelected}> {item.title} </li>
               })}
         </nav>
         <div className={this.state.selected === 'Population' ? 'filter-class' : 'hidden'}>
@@ -82,21 +87,38 @@ class Filter extends Component {
             <button className="gdp-range-button" type="submit">Find Countries</button>
           </form>
         </div>
-        <div className={this.state.selected === 'Continent' ? 'filter-class' : 'hidden'}>
-          <ul> 
-            {setTimeout(() => {
-              console.log(this.props.continentData.continents);
-              {this.props.continentData.continents.map((continent) => {
-                return <li>{continent.name}</li>
-                })
-              }
-            }, 1000)}
-          </ul>
+    </div> 
+    )        
+    } else {
+      return (
+      <div>
+        <nav>
+          {this.props.items.map((item) => {
+                return <li name={item.title} className={item.id} onClick={this.toggleSelected}> {item.title} </li>
+              })}
+        </nav>
+        <div className={this.state.selected === 'Population' ? 'filter-class' : 'hidden'}>
+          <form onSubmit={this.filterPopulation}>
+            <input type="text" placeholder="min population" className="minPopulation" value={this.state.minPopulation} onChange={this.handleChange}/> 
+            <input type="text" placeholder="max population" className="maxPopulation" value={this.state.maxPopulation} onChange={this.handleChange}/>
+            <button className="population-range-button" type="submit">Find Countries</button>
+          </form>
         </div>
-    </div>
-    
-    )  
-            
+        <div className={this.state.selected === 'GDP' ? 'filter-class' : 'hidden'}>
+          <form onSubmit={this.filterGDP}>
+            <input type="text" placeholder="min gdp" className="minGDP" value={this.state.minGDP} onChange={this.handleChange}/> 
+            <input type="text" placeholder="max gdp" className="maxGDP" value={this.state.maxGDP} onChange={this.handleChange}/>
+            <button className="gdp-range-button" type="submit">Find Countries</button>
+          </form>
+        </div>
+        <div className="filtered-countries"> 
+              {this.state.filteredCountries.map((country) => {
+                return <li> {country.name} </li>
+              })}
+        </div>
+    </div> 
+      )        
+    }
   }
 }
 
