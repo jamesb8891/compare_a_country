@@ -106,7 +106,6 @@ class Filter extends Component {
       </div>
    
       )        
-    // }
   }
 }
 
