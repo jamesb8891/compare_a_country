@@ -10,16 +10,15 @@ Open Your Terminal
 
 Copy and paste the following lines below into your terminal:
 
-```git clone https://github.com/colev1/compare_a_country.git```
+`git clone https://github.com/colev1/compare_a_country.git`
 
-```cd compare_a_country/```
+`cd compare_a_country/`
 
-```npm install```
+`npm install`
 
-```npm install node-sass```
+`npm install node-sass`
 
-```npm start```
-
+`npm start`
 
 ### Project Background:
 

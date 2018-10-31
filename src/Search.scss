@@ -1,9 +1,9 @@
-$pink-color: #A15429;
+$pink-color: #a15429;
 
 form {
   align-items: center;
   display: flex;
-  font-family: 'Niramit', sans-serif;
+  font-family: "Niramit", sans-serif;
   padding: 1% 0 1% 2%;
   width: 50%;
   min-width: 400px;
@@ -14,7 +14,7 @@ form {
   color: black;
   font-size: 1em;
   height: 50px;
-  margin-right:10px;
+  margin-right: 10px;
   padding-left: 12px;
   width: 70%;
   // background-color: #B5834F;
@@ -23,8 +23,8 @@ form {
 
 button {
   background-color: $pink-color;
-  color: #BDA27F;
-  font-family: 'Niramit', sans-serif;
+  color: #bda27f;
+  font-family: "Niramit", sans-serif;
   font-size: 1em;
   font-weight: 700;
   height: 57px;
@@ -35,7 +35,7 @@ button {
 }
 
 button:hover {
-  opacity: .6;
+  opacity: 0.6;
   cursor: pointer;
 }
 
