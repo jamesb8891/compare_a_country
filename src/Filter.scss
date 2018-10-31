@@ -29,6 +29,7 @@ nav li {
 }
 
 .filter-class {
+  padding-left: 20px;
   position: absolute;
   background-color: red;
   z-index: 1;
@@ -50,9 +51,20 @@ form {
 .filtered-countries {
   list-style: none;
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   display: block;
   padding: 10px;
+  li {
+    margin: 4px;
+    // margin-right: 80px;
+  }
+
+  span{
+    font-weight: bold;
+    margin: 16px;
+    margin-bottom: 40px;
+  }
+
 }
 
 .filter-form {

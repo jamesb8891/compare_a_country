@@ -5,6 +5,7 @@ import Search from './Search.js';
 import List from './List.js';
 import Card from './Card.js';
 import CardContainer from './CardContainer.js';
+import globe from './images/globe.gif'
 
 class App extends Component {  
   constructor() {
@@ -15,6 +16,7 @@ class App extends Component {
       countryInput: '', 
       displayCards: [], 
       countriesMatchingFilter: [],
+      showPopup: true,
       navigation: [
         {
           id: 0, 
@@ -58,6 +60,13 @@ class App extends Component {
         .catch(error => console.log(error))
     }
 
+    hidePopup = (event) => {
+      event.preventDefault();
+      this.setState({
+        showPopup: false
+      });
+    }
+
     updateCountryInput = (countryName) => {
       this.setState({
         countryInput: countryName
@@ -98,7 +107,16 @@ class App extends Component {
   render() {
     if (this.state.displayCards.length === 0) {
     return (
-      <div className="App">
+
+      <div className="App"> 
+        
+        {this.state.showPopup ?
+         <div className="popup"> 
+         <h1> NATION NAVIGATION </h1>
+          <img src={globe} />
+          search for a country! or filter by population or GDP
+          <button className="hide-popup-button" onClick={this.hidePopup}> start exploring! </button> 
+        </div> : null }
         <header className="App-header">
           <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
           <Filter items={this.state.navigation} continentData={this.state.continentData} countryData={this.state.countryData} displayFilteredCountries={this.displayFilteredCountries} />

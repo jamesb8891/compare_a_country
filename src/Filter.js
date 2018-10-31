@@ -87,7 +87,7 @@ class Filter extends Component {
           </form>
           <div className="filtered-countries"> 
               {this.state.filteredCountries.map((country) => {
-                return <li className="country-list"> {country.name} </li>
+                return <li className="country-list"> <span className="country-name"> {country.name} </span> population: {country.population} </li>
               })}
           </div>
         </div>
@@ -99,7 +99,7 @@ class Filter extends Component {
           </form>
           <div className="filtered-countries"> 
               {this.state.filteredCountries.map((country) => {
-                return <li className="country-list"> {country.name} </li>
+                return <li className="country-list"> country: {country.name}       GDP: ${country.GDP}/capita </li>
               })}
           </div>
         </div>
