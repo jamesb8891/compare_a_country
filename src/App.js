@@ -29,6 +29,12 @@ class App extends Component {
           title: 'GDP', 
           selected: false, 
           key: 'navigation'
+        },
+        {
+          id: 2, 
+          title: 'Continent', 
+          selected: false, 
+          key: 'navigation'
         }
       ]
     }
@@ -75,13 +81,17 @@ class App extends Component {
 
     findCountry = (countryName) => {
         let chosenCountryObj = this.state.countryData.countries.find((country) => {
-          return (country.name.toLowerCase() === countryName) 
+            return (country.name.toLowerCase() === countryName)   
         })
         if (!this.state.displayCards.includes(chosenCountryObj)) {
         this.setState({
         displayCards: [...this.state.displayCards, chosenCountryObj]
         }) 
       }
+    }
+
+    alertUser = () => {
+      console.log('That is not a country!');
     }
 
     deleteCard = (deletedCard) => {
@@ -103,6 +113,20 @@ class App extends Component {
       })
     }
 
+    filterByContinent = (event) => {
+      event.preventDefault();
+      let chosenContinent = event.target.name;
+      let countriesArr = this.state.continentData.continents.find(continent => {
+       if (continent.name === chosenContinent) {
+        return continent.countries;
+        }
+      });
+      let countriesMatchingFilter = countriesArr.countries;
+      this.setState({
+        countriesMatchingFilter: countriesMatchingFilter
+      })
+    }
+
   render() {
     if (this.state.displayCards.length === 0) {
     return (
@@ -118,7 +142,7 @@ class App extends Component {
         </div> : null }
         <header className="App-header">
           <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
-          <Filter items={this.state.navigation} continentData={this.state.continentData} countryData={this.state.countryData} displayFilteredCountries={this.displayFilteredCountries} />
+          <Filter items={this.state.navigation} continentData={this.state.continentData} countryData={this.state.countryData} displayFilteredCountries={this.displayFilteredCountries} filterByContinent={this.filterByContinent} countriesMatchingFilter={this.state.countriesMatchingFilter} filteredCountries={this.state.countriesMatchingFilter}/>
         </header>
         <main className = "App-main">
           
@@ -129,12 +153,12 @@ class App extends Component {
         return (
          <div className="App">
         <header className="App-header">
-          <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry}/>
-          <Filter items={this.state.navigation} continentData={this.state.continentData} countryData={this.state.countryData} displayFilteredCountries={this.displayFilteredCountries} />
+          <Search countryData={this.state.countryData} continentData={this.state.continentData} updateCountryInput={this.updateCountryInput} findCountry={this.findCountry} clearAllCountries={this.deleteAllCards} countriesMatchingFilter={this.state.countriesMatchingFilter} />
+          <Filter items={this.state.navigation} continentData={this.state.continentData} countryData={this.state.countryData} displayFilteredCountries={this.displayFilteredCountries} filterByContinent={this.filterByContinent} filteredCountries={this.state.countriesMatchingFilter} />
         </header>
         <main className = "App-main">
          
-          <CardContainer className="card-container" displayCards={this.state.displayCards} continentData={this.state.continentData} deleteCard={this.deleteCard}/>
+          <CardContainer className="card-container" displayCards={this.state.displayCards} continentData={this.state.continentData} deleteCard={this.deleteCard} alertUser={this.alertUser}/>
         </main>
       </div> 
       )

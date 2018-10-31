@@ -17,9 +17,8 @@ form {
   margin-right:10px;
   padding-left: 12px;
   width: 70%;
-  background-color: #B5834F;
+  // background-color: #B5834F;
   border: none;
-
 }
 
 button {
@@ -32,6 +31,7 @@ button {
   opacity: 1;
   transition: opacity 0.8s;
   border: none;
+  margin: 10px;
 }
 
 button:hover {

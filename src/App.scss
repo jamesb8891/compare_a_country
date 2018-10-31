@@ -1,8 +1,7 @@
 $background-image: url('images/background.jpg');
 $popup-background: url('images/globe.gif');
 $light-background: #26404D;
-$main-text-color: #BDA27F
-;
+$main-text-color: #BDA27F;
 $font-family: 'Niramit', sans-serif;
 $pink-color: #A15429;
 
@@ -19,6 +18,8 @@ $pink-color: #A15429;
   position: absolute;
   z-index: 4;
   border: $pink-color solid 2px;
+  font-size: 2rem;
+  color: $pink-color;
   background-color: $light-background;
   width: 900px;
   height: 600px;
@@ -33,9 +34,9 @@ $pink-color: #A15429;
     color: $pink-color;
   }
   button {
-    width: 260px;
-    height: 100px;
-    font-size: 2rem;
+    width: 230px;
+    height: 80px;
+    font-size: 1.6rem;
   }
 }
 
@@ -49,7 +50,7 @@ $pink-color: #A15429;
   @include display-flex(row);
   background: $light-background;
   color:  $main-text-color;
-  font-size: 1em;
+  font-size: 1.2em;
   height: 120px;
   align-items: center;
 }
@@ -57,7 +58,7 @@ $pink-color: #A15429;
 .App-main {
   display: flex;
   flex-direction: row;
-  height: 84vh;
+  min-height: 84vh;
   padding-top: 10%;
 }
 

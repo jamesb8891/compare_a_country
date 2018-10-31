@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import './Search.scss';
 
 class Search extends Component {
-  constructor() {
-    super(); 
+  constructor(props) {
+    super(props); 
     this.state = {
       countryName: ''
     }
@@ -28,6 +28,7 @@ class Search extends Component {
       <form onSubmit={this.takeCountry}>
         <input className="input" type="text" placeholder="Search for a Country" value={this.state.countryName} onChange={this.handleChange} country={this.state.countryName}/>
         <button className="submit-button" type="submit"> search! </button>
+        <button className="clear-button" onClick={this.props.clearAllCountries}> clear all </button>
       </form>
     )
   }
