@@ -1,9 +1,10 @@
-$background-image: url('images/mountains.jpg');
+$background-image: url('images/background.jpg');
 $popup-background: url('images/globe.gif');
-$light-background: rgb(253, 249, 248);
-$main-text-color: #454F55;
+$light-background: #26404D;
+$main-text-color: #BDA27F
+;
 $font-family: 'Niramit', sans-serif;
-$pink-color: #E38975;
+$pink-color: #A15429;
 
 
 @mixin display-flex($direction) {
