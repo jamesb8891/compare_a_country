@@ -1,8 +1,7 @@
 $background-image: url('images/background.jpg');
 $popup-background: url('images/globe.gif');
 $light-background: #26404D;
-$main-text-color: #BDA27F
-;
+$main-text-color: #BDA27F;
 $font-family: 'Niramit', sans-serif;
 $pink-color: #A15429;
 
@@ -49,7 +48,7 @@ $pink-color: #A15429;
   @include display-flex(row);
   background: $light-background;
   color:  $main-text-color;
-  font-size: 1em;
+  font-size: 1.2em;
   height: 120px;
   align-items: center;
 }

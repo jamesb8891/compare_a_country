@@ -19,7 +19,6 @@ class Card extends Component {
     return (
       <div className ="card">
         <header className="card-header">
-          <input className="star-button" type="image" src={star} />
           <div className="country-info">
             <h1 className = "country-name">
             {country.name}

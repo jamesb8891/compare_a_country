@@ -23,7 +23,8 @@ class Filter extends Component {
       })
     } else {
       this.setState({
-        selected: ''
+        selected: '',
+        filteredCountries: []
       })
     }
     
@@ -38,8 +39,8 @@ class Filter extends Component {
 
   filterPopulation = (event) => {
     event.preventDefault();
-    const minPop = this.state.minPopulation;
-    const maxPop = this.state.maxPopulation;
+    const minPop = this.state.minPopulation || 0;
+    const maxPop = this.state.maxPopulation || 2000000000;
     const filteredCountries = this.props.countryData.countries.filter((country) => {
       if (country.population < maxPop && country.population > minPop) {
         return country;
@@ -56,8 +57,8 @@ class Filter extends Component {
 
   filterGDP = (event) => {
     event.preventDefault();
-    const minGDP = this.state.minGDP;
-    const maxGDP = this.state.maxGDP;
+    const minGDP = this.state.minGDP || 0;
+    const maxGDP = this.state.maxGDP || 2000000000;
     const filteredCountries = this.props.countryData.countries.filter((country) => {
       if (country.population < maxGDP && country.population > minGDP) {
         return country.name;
@@ -99,7 +100,7 @@ class Filter extends Component {
           </form>
           <div className="filtered-countries"> 
               {this.state.filteredCountries.map((country) => {
-                return <li className="country-list"> country: {country.name}       GDP: ${country.GDP}/capita </li>
+                return <li className="country-list"> <span className="country-name">country: {country.name} </span>      GDP: ${country.GDP}/capita </li>
               })}
           </div>
         </div>

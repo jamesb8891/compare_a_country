@@ -75,13 +75,17 @@ class App extends Component {
 
     findCountry = (countryName) => {
         let chosenCountryObj = this.state.countryData.countries.find((country) => {
-          return (country.name.toLowerCase() === countryName) 
+            return (country.name.toLowerCase() === countryName)   
         })
         if (!this.state.displayCards.includes(chosenCountryObj)) {
         this.setState({
         displayCards: [...this.state.displayCards, chosenCountryObj]
         }) 
       }
+    }
+
+    alertUser = () => {
+      console.log('That is not a country!');
     }
 
     deleteCard = (deletedCard) => {
@@ -134,7 +138,7 @@ class App extends Component {
         </header>
         <main className = "App-main">
          
-          <CardContainer className="card-container" displayCards={this.state.displayCards} continentData={this.state.continentData} deleteCard={this.deleteCard}/>
+          <CardContainer className="card-container" displayCards={this.state.displayCards} continentData={this.state.continentData} deleteCard={this.deleteCard} alertUser={this.alertUser}/>
         </main>
       </div> 
       )
