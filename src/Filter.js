@@ -225,8 +225,8 @@ class Filter extends Component {
             </button>
           </form>
           <div className="filtered-countries">
-            {this.state.filteredCountries.map(country => {
-              return <li className="country-list">{country.name} </li>;
+            {this.props.countriesMatchingFilter.map(country => {
+              return <li className="country-list">{country}</li>;
             })}
           </div>
         </div>
