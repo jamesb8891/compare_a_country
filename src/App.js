@@ -154,7 +154,6 @@ class App extends Component {
               items={this.state.navigation}
               continentData={this.state.continentData}
               countryData={this.state.countryData}
-              displayFilteredCountries={this.displayFilteredCountries}
               filterByContinent={this.filterByContinent}
               countriesMatchingFilter={this.state.countriesMatchingFilter}
               filteredCountries={this.state.countriesMatchingFilter}
@@ -173,14 +172,13 @@ class App extends Component {
               updateCountryInput={this.updateCountryInput}
               findCountry={this.findCountry}
               clearAllCountries={this.deleteAllCards}
-              countriesMatchingFilter={this.state.countriesMatchingFilter}
             />
             <Filter
               items={this.state.navigation}
               continentData={this.state.continentData}
               countryData={this.state.countryData}
-              displayFilteredCountries={this.displayFilteredCountries}
               filterByContinent={this.filterByContinent}
+              countriesMatchingFilter={this.state.countriesMatchingFilter}
               filteredCountries={this.state.countriesMatchingFilter}
             />
           </header>

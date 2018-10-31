@@ -1,36 +1,22 @@
-$background-image: url("images/background.jpg");
-$popup-background: url("images/globe.gif");
-$light-background: #26404d;
-$main-text-color: #bda27f;
-$font-family: "Niramit", sans-serif;
-$pink-color: #a15429;
-
-@mixin display-flex($direction) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: space-between;
-  align-items: center;
-}
+@import "variables";
 
 .popup {
   @include display-flex(column);
-  position: absolute;
-  z-index: 4;
-  border: $pink-color solid 2px;
-  font-size: 2rem;
-  color: $pink-color;
   background-color: $light-background;
-  width: 900px;
-  height: 600px;
+  border: $pink-color solid 2px;
+  color: $pink-color;
+  font-size: 2rem;
+  height: 100vh;
   padding: 20px;
-  left: 24%;
-  top: 20%;
+  position: absolute;
+  width: 100vw;
+  z-index: 2;
   h1 {
-    font-size: 5.4rem;
-    font-family: "Nova Flat";
-    opacity: 1;
-    margin: 0;
     color: $pink-color;
+    font-family: $header-font-family;
+    font-size: 5.4rem;
+    margin: 0;
+    opacity: 1;
   }
   button {
     width: 230px;
@@ -59,6 +45,7 @@ $pink-color: #a15429;
   flex-direction: row;
   min-height: 84vh;
   padding-top: 10%;
+  overflow: hidden;
 }
 
 .card-container {
@@ -71,5 +58,3 @@ $pink-color: #a15429;
 .hidden {
   display: none;
 }
-
-@import url("https://fonts.googleapis.com/css?family=Niramit");

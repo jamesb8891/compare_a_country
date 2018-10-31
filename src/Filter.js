@@ -47,7 +47,6 @@ class Filter extends Component {
         }
       }
     );
-    this.props.displayFilteredCountries(filteredCountries);
     this.setState({
       minPopulation: "",
       maxPopulation: "",
@@ -62,7 +61,7 @@ class Filter extends Component {
     const filteredCountries = this.props.countryData.filter(
       country => {
         if (country.population < maxGDP && country.population > minGDP) {
-          return country.name;
+          return country;
         }
       }
     );
@@ -84,8 +83,7 @@ class Filter extends Component {
                 className={item.id}
                 onClick={this.toggleSelected}
               >
-                {" "}
-                {item.title}{" "}
+                {item.title}
               </li>
             );
           })}
@@ -120,8 +118,8 @@ class Filter extends Component {
               return (
                 <li className="country-list">
                   {" "}
-                  <span className="country-name"> {country.name} </span>{" "}
-                  population: {country.population}{" "}
+                  <span className="country-name"> {country.name} </span>
+                  population: {country.population}
                 </li>
               );
             })}
@@ -154,12 +152,10 @@ class Filter extends Component {
             {this.state.filteredCountries.map(country => {
               return (
                 <li className="country-list">
-                  {" "}
                   <span className="country-name">
-                    country: {country.name}{" "}
-                  </span>{" "}
-                  GDP: ${country.GDP}
-                  /capita{" "}
+                    country: {country.name}
+                  </span>
+                  GDP: ${country.GDP}/capita
                 </li>
               );
             })}
@@ -216,8 +212,8 @@ class Filter extends Component {
             </button>
           </form>
           <div className="filtered-countries">
-            {this.props.countriesMatchingFilter.map(country => {
-              return <li className="country-list">{country}</li>;
+            {this.props.filteredCountries.map(country => {
+              return <li className="country-list">{country} </li>;
             })}
           </div>
         </div>

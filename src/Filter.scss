@@ -1,11 +1,4 @@
-$light-background: #26404d;
-
-@mixin display-flex($direction) {
-  display: flex;
-  flex-direction: $direction;
-  justify-content: space-around;
-  align-items: center;
-}
+@import "variables";
 
 nav {
   @include display-flex(row);
@@ -30,6 +23,7 @@ nav li {
 
 .filter-class {
   padding-left: 20px;
+  padding-right: 30px;
   position: absolute;
   background-color: red;
   z-index: 1;
@@ -39,14 +33,23 @@ nav li {
   width: 40%;
   display: flex;
   height: 100vh;
+  width: 36vw;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
   form {
-    margin: 0px 0 50px 0;
+    margin: 0px 20px 50px 0;
   }
   h3 {
     @include display-flex(row);
+    height: 100px;
+    min-height: 100px;
+    width: 400px;
+  }
+  button {
+    font-size: .8rem;
+    width: 90px;
+    height: 40px;
   }
 }
 
