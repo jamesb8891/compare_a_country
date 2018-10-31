@@ -1,3 +1,6 @@
+$main-text-color: #3D2412;
+
+
 @mixin display-flex($direction) {
   display: flex;
   flex-direction: $direction;
@@ -14,7 +17,7 @@
 
 .card {
   @include display-flex(column);
-  background-color: rgb(227, 137, 117);
+  background-color: #B5834F;
   border-radius: 20px;
   height: 400px;
   width: 300px;
