@@ -45,7 +45,6 @@ class Filter extends Component {
         if (country.population < maxPop && country.population > minPop) {
           return country;
         }
-        console.log(filteredCountries);
       }
     );
     this.props.displayFilteredCountries(filteredCountries);
@@ -70,14 +69,6 @@ class Filter extends Component {
     this.setState({
       minGDP: "",
       maxGDP: "",
-      filteredCountries: filteredCountries
-    });
-  };
-
-  filterByContinent = event => {
-    event.preventDefault();
-    let filteredCountries = this.props.filteredCountries;
-    this.setState({
       filteredCountries: filteredCountries
     });
   };
