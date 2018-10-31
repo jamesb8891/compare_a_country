@@ -64,8 +64,7 @@ class Filter extends Component {
     })
   }  
 
-  render() {  
-    if (!this.state.filteredCountries) {
+  render() { 
       return (
       <div>
         <nav>
@@ -79,46 +78,28 @@ class Filter extends Component {
             <input type="text" placeholder="max population" className="maxPopulation" value={this.state.maxPopulation} onChange={this.handleChange}/>
             <button className="population-range-button" type="submit">Find Countries</button>
           </form>
-        </div>
-        <div className={this.state.selected === 'GDP' ? 'filter-class' : 'hidden'}>
-          <form onSubmit={this.filterGDP}>
-            <input type="text" placeholder="min gdp" className="minGDP" value={this.state.minGDP} onChange={this.handleChange}/> 
-            <input type="text" placeholder="max gdp" className="maxGDP" value={this.state.maxGDP} onChange={this.handleChange}/>
-            <button className="gdp-range-button" type="submit">Find Countries</button>
-          </form>
-        </div>
-    </div> 
-    )        
-    } else {
-      return (
-      <div>
-        <nav>
-          {this.props.items.map((item) => {
-                return <li name={item.title} className={item.id} onClick={this.toggleSelected}> {item.title} </li>
-              })}
-        </nav>
-        <div className={this.state.selected === 'Population' ? 'filter-class' : 'hidden'}>
-          <form onSubmit={this.filterPopulation}>
-            <input type="text" placeholder="min population" className="minPopulation" value={this.state.minPopulation} onChange={this.handleChange}/> 
-            <input type="text" placeholder="max population" className="maxPopulation" value={this.state.maxPopulation} onChange={this.handleChange}/>
-            <button className="population-range-button" type="submit">Find Countries</button>
-          </form>
-        </div>
-        <div className={this.state.selected === 'GDP' ? 'filter-class' : 'hidden'}>
-          <form onSubmit={this.filterGDP}>
-            <input type="text" placeholder="min gdp" className="minGDP" value={this.state.minGDP} onChange={this.handleChange}/> 
-            <input type="text" placeholder="max gdp" className="maxGDP" value={this.state.maxGDP} onChange={this.handleChange}/>
-            <button className="gdp-range-button" type="submit">Find Countries</button>
-          </form>
-        </div>
-        <div className="filtered-countries"> 
+          <div className="filtered-countries"> 
               {this.state.filteredCountries.map((country) => {
-                return <li> {country.name} </li>
+                return <li className="country-list"> {country.name} </li>
               })}
+          </div>
         </div>
-    </div> 
+        <div className={this.state.selected === 'GDP' ? 'filter-class' : 'hidden'}>
+          <form onSubmit={this.filterGDP}>
+            <input type="text" placeholder="min gdp" className="minGDP" value={this.state.minGDP} onChange={this.handleChange}/> 
+            <input type="text" placeholder="max gdp" className="maxGDP" value={this.state.maxGDP} onChange={this.handleChange}/>
+            <button className="gdp-range-button" type="submit">Find Countries</button>
+          </form>
+          <div className="filtered-countries"> 
+              {this.state.filteredCountries.map((country) => {
+                return <li className="country-list"> {country.name} </li>
+              })}
+          </div>
+        </div>
+      </div>
+   
       )        
-    }
+    // }
   }
 }
 
