@@ -16,10 +16,17 @@ class Filter extends Component {
 
   toggleSelected = (event) => {
     event.preventDefault(); 
-    let itemName = event.target.getAttribute('name') 
+    if (!this.state.selected) {
+      let itemName = event.target.getAttribute('name') 
       this.setState({
         selected: itemName
-    })
+      })
+    } else {
+      this.setState({
+        selected: ''
+      })
+    }
+    
   }
 
   handleChange = (event) => {
