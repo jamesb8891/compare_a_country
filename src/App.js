@@ -87,8 +87,9 @@ class App extends Component {
     }
 
     deleteCard = (deletedCard) => {
+      const updatedCards = this.state.displayCards.filter(item => item !== deletedCard.props.country)
       this.setState({
-        displayCards: this.state.displayCards.filter(item => item !== deletedCard.props.country)
+        displayCards: updatedCards
         })
     }
 
