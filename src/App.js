@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./App.scss";
 import Filter from "./Filter.js";
 import Search from "./Search.js";
-import List from "./List.js";
 import Card from "./Card.js";
 import CardContainer from "./CardContainer.js";
 import globe from "./images/globe.gif";
