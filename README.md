@@ -35,13 +35,14 @@ This project will help us learn how to build React apps and make an api call to 
 ### Design and Layout
 
 ##### Our Wireframe:
+![Image of Wireframe](wireframe.png)
 
-
+##### Our App:
 ![Image of app](src/images/pic1.png)
 
 ![Another image of app](src/images/pic2.png)
 
-![Image of Wireframe](wireframe.png)
+
 
 ### Collaboration:
 
