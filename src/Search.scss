@@ -1,11 +1,14 @@
+$pink-color: #E38975;
+
 form {
   align-items: center;
   display: flex;
   font-family: 'Niramit', sans-serif;
-  height: 50px;
+  // height: 100%;
   padding: 1% 0 1% 2%;
   width: 50%;
   min-width: 400px;
+  margin: 0;
 }
 
 .input {
@@ -17,7 +20,7 @@ form {
 }
 
 button {
-  background-color: #E38975;
+  background-color: $pink-color;
   color: #454F55;
   font-family: 'Niramit', sans-serif;
   font-size: 1em;

@@ -29,14 +29,42 @@ nav li {
 }
 
 .filter-class {
+  padding-left: 20px;
   position: absolute;
   background-color: red;
   z-index: 1;
   top: 118px;
   background-color: $light-background;
   right: 0;
-  width: 54%;
+  width: 40%;
   display: flex;
+  height: 100vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  margin: 20px 0 50px 0;
+}
+
+.filtered-countries {
+  list-style: none;
+  width: 100%;
+  font-size: 1.3rem;
+  display: block;
+  padding: 10px;
+  li {
+    margin: 4px;
+    // margin-right: 80px;
+  }
+
+  span{
+    font-weight: bold;
+    margin: 16px;
+    margin-bottom: 40px;
+  }
+
 }
 
 .filter-form {

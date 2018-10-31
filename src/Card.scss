@@ -24,7 +24,7 @@
 
 .country-info {
   @include display-flex(column);
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   width: 80%;
 }
 
@@ -44,6 +44,7 @@
   @include display-flex(column);
   height: 80%;
   padding: 10px;
+  font-size: 1.2rem;
 }
 
 .star-button, .delete-button {
