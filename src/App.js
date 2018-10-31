@@ -75,9 +75,7 @@ class App extends Component {
 
     findCountry = (countryName) => {
         let chosenCountryObj = this.state.countryData.countries.find((country) => {
-          if (country.name.toLowerCase() === countryName) {
-            return country;
-          }
+          return (country.name.toLowerCase() === countryName) 
         })
         if (!this.state.displayCards.includes(chosenCountryObj)) {
         this.setState({
@@ -87,8 +85,9 @@ class App extends Component {
     }
 
     deleteCard = (deletedCard) => {
+      const updatedCards = this.state.displayCards.filter(item => item !== deletedCard.props.country)
       this.setState({
-        displayCards: this.state.displayCards.filter(item => item !== deletedCard.props.country)
+        displayCards: updatedCards
         })
     }
 

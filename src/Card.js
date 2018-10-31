@@ -15,32 +15,33 @@ class Card extends Component {
   }
 
   render() {
+    let {country, continent} = this.props
     return (
       <div className ="card">
         <header className="card-header">
           <input className="star-button" type="image" src={star} />
           <div className="country-info">
             <h1 className = "country-name">
-            {this.props.country.name}
+            {country.name}
             </h1>
             <p className = "continent-name">
-            {this.props.continent.name}
+            {continent.name}
             </p>
           </div>
           <input className = "delete-button" type="image" src={close} onClick={this.deleteCard} /> 
         </header>
         <main className="card-stats-container">
           <p className="country-pop">
-          population: {this.props.country.population}
+          population: {country.population}
           </p>
           <p className="country-GDP">
-          GDP per capita: {this.props.country.GDP}
+          GDP per capita: {country.GDP}
           </p>
           <p className="country-area">
-          area: {this.props.country.area}
+          area: {country.area}
           </p>
           <p className="country-density">
-          pop. density: {this.props.country.pop_density}
+          pop. density: {country.pop_density}
           </p>
         </main>
       </div>
