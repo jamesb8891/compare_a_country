@@ -20,6 +20,10 @@ Copy and paste the following lines below into your terminal:
 
 `npm start`
 
+### Live App
+
+https://jamesb8891.github.io/compare_a_country/
+
 ### Project Background:
 
 This project will help us learn how to build React apps and make an api call to pbtain data and then utilize that data. Our data is broken into two datasets and need to be both utilized. This project is also an opportunity for us to build out a program based on user stories.
